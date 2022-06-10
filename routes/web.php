@@ -25,3 +25,7 @@ Route::get('/contect', function () {
     $nama = 'Bobi';
     return view('pages/contect', ['nama' => $nama]);
 });
+
+Route::get('/dashboard', function () {
+    return view('pages/dashboard');
+});
