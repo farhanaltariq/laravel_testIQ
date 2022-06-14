@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Auth::routes();
+
+// buat login register sementara
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// logout
+Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
+
 Route::get('/', function () {
     return view('pages/index');
 });
@@ -26,6 +33,10 @@ Route::get('/contect', function () {
     return view('pages/contect', ['nama' => $nama]);
 });
 
-Route::get('/dashboard', function () {
-    return view('pages/dashboard');
+// cuma bisa diakses kalo udah login
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('pages/dashboard');
+    });
+    // tambahin route baru didalam sini kalo perlu login
 });
