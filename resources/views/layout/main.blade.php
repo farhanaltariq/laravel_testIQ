@@ -2,47 +2,100 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!doctype html>
+    <html lang="en">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <head>
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>@yield('title')</title>
 
-    <title>@yield('title')</title>
-</head>
+        <!-- Styles -->
+        <link rel='stylesheet' href="{{ asset('webSPP') }}/assets/css/bootstrap.min.css">
+        <link rel='stylesheet' href="{{ asset('webSPP') }}/assets/css/animate.min.css">
+        <link rel='stylesheet' href="{{ asset('webSPP') }}/assets/css/font-awesome.min.css" />
+        <link rel='stylesheet' href="{{ asset('webSPP') }}/assets/css/style.css" />
+
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- Favicon -->
+        <link rel="icon" href="{{ asset('webSPP') }}/assets/img/brand/box2.png" type="image/png">
+
+
+    </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Nama Perusahaan</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" href="/">Home</a>
-                    <a class="nav-link" href="/service">Service</a>
-                    <a class="nav-link" href="/contect">Contact</a>
-                </div>
-            </div>
+
+    <body>
+        <!-- Begin Hero Bg -->
+        <div id="parallax">
         </div>
-    </nav>
+        <!-- End Hero Bg
+		================================================== -->
+        <!-- Start Header
+		================================================== -->
+        <header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Your Logo -->
+                    <a href="#hero" class="navbar-brand">Logo <span class="lighter">Company</span></a>
+                </div>
+                <!-- Start Navigation -->
+                <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#about">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#service">Service</a>
+                        </li>
+                        <li>
+                            <a href="#contactarea">Contact</a>
+                        </li>
+                        <li>
+                            <a href="login"><img src="{{ asset('webSPP') }}/assets/img/icons/png/100-log-in.png" width="30" alt="login"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    @yield('content')
+        @yield('content')
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-    -->
-</body>
+        <!-- Credits 
+	=============================================== -->
+        <section id="credits" class="text-center">
+            <span class="social wow zoomIn">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-skype"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+            </span><br />
+            Copyright &copy; 2022 <a href="#">Bina Pisikologi Indonesia</a>
+        </section>
+        <!-- Bootstrap core JavaScript
+		================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="{{ asset('webSPP') }}/assets/js/jquery.min.js"></script>
+        <script src="{{ asset('webSPP') }}/assets/js/bootstrap.min.js"></script>
+        <script src="{{ asset('webSPP') }}/assets/js/waypoints.min.js"></script>
+        <script src="{{ asset('webSPP') }}/assets/js/jquery.scrollTo.min.js"></script>
+        <script src="{{ asset('webSPP') }}/assets/js/jquery.localScroll.min.js"></script>
+        <script src="{{ asset('webSPP') }}/assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="{{ asset('webSPP') }}/assets/js/validate.js"></script>
+        <script src="{{ asset('webSPP') }}/assets/js/common.js"></script>
+    </body>
 
 </html>
