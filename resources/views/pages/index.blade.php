@@ -3,6 +3,17 @@
 @section('title', 'Home')
 
 @section('content')
+<div class="card-header">{{ __('Dashboard') }}</div>
+
+<div class="card-body">
+    @if (session('status'))
+    <div class="alert alert-success" role="alert">
+        {{ session('status') }}
+    </div>
+    @endif
+
+    {{ __('You are logged in!') }}
+</div>
 <!-- Intro
 		================================================== -->
 <section id="hero" class="section">
@@ -10,8 +21,14 @@
         <div class="row">
             <div class="col-md-9">
                 <div class="herotext">
-                    <h1 class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="0.1s"> <span class="lighter"></span></h1>
+                    <p class="lead wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s">
+                    <h2>BINA PISIKOLOGI <br> INDONESIA</h2>
+                    <span class="lighter">Lembaga Pisikologi dan Jasa Pisikologi</span>
+                    </p>
 
+                    <p>
+                        <a href="#service" class="btn btn-success" role="button">SELENGKAPNYA</a> &nbsp;
+                    </p>
                 </div>
             </div>
         </div>

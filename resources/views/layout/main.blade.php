@@ -83,7 +83,7 @@
                 <a href="#"><i class="fa fa-pinterest"></i></a>
                 <a href="#"><i class="fa fa-google-plus"></i></a>
             </span><br />
-            Copyright &copy; 2022 <a href="#">Bina Pisikologi Indonesia</a>
+            Copyright &copy;<a href="#">2022 Bina Pisikologi Indonesia</a>
         </section>
         <!-- Bootstrap core JavaScript
 		================================================== -->
