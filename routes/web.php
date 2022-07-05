@@ -15,8 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-// buat login register sementara
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 // logout
 Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 
@@ -35,7 +33,7 @@ Route::get('/contect', function () {
 
 // cuma bisa diakses kalo udah login
 Route::middleware(['auth'])->group(function () {
-    Route::get('/dashboard', function () {
+    Route::get('/home', function () {
         return view('pages/dashboard');
     });
     // tambahin route baru didalam sini kalo perlu login
