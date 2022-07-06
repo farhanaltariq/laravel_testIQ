@@ -7,12 +7,30 @@
                     </button>
 
                     <!-- Topbar Search -->
-                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100">
+                    <div class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100">
                         <div class="text-dark font-weight-bold">
-                            {{ Carbon\Carbon::now()->format('d-m-Y') }}
+                            {{ Carbon\Carbon::now()->format('d-m-Y') }} | 
+                            <span id="time"></span>
                         </div>
-                    </form>
 
+                    <script type="text/javascript">
+                    function showTime() {
+                        var date = new Date(),
+                            utc = new Date(Date.UTC(
+                            date.getFullYear(),
+                            date.getMonth(),
+                            date.getDate(),
+                            date.getHours(),
+                            date.getMinutes(),
+                            date.getSeconds()
+                            ));
+
+                        document.getElementById('time').innerHTML = utc.toLocaleTimeString();
+                    }
+
+                    setInterval(showTime, 1000);
+                    </script>
+                    </div>
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
