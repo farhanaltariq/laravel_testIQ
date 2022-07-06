@@ -19,22 +19,13 @@ Auth::routes();
 Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 
 Route::get('/', function () {
-    return view('pages/index');
-});
-
-Route::get('/service', function () {
-    return view('pages/service');
-});
-
-Route::get('/contect', function () {
-    $nama = 'Bobi';
-    return view('pages/contect', ['nama' => $nama]);
+    return view('landing-pages/index');
 });
 
 // cuma bisa diakses kalo udah login
 Route::middleware(['auth'])->group(function () {
     Route::get('/home', function () {
-        return view('pages/dashboard');
+        return view('dashboard/index');
     });
     // tambahin route baru didalam sini kalo perlu login
 });
