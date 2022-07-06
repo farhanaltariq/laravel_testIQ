@@ -20,7 +20,7 @@
                             date.getFullYear(),
                             date.getMonth(),
                             date.getDate(),
-                            date.getHours()+7,
+                            date.getHours()+5,
                             date.getMinutes(),
                             date.getSeconds()
                             ));
