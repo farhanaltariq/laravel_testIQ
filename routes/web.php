@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Models\N1;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,8 +24,14 @@ Route::get('/', function () {
 
 // cuma bisa diakses kalo udah login
 Route::middleware(['auth'])->group(function () {
+    // tambahin route baru didalam sini kalo perlu login
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/calendar', [App\Http\Controllers\FullCalendarController::class, 'index'])->name('calendar');
-    Route::get('/test-n', [App\Http\Controllers\CalculatorController::class, 'test_n'])->name('test-n');
-    // tambahin route baru didalam sini kalo perlu login
+    Route::get('/test-n1', [App\Http\Controllers\CalculatorController::class, 'test_n1'])->name('test-n1');
+    Route::post('/test-n1', [App\Http\Controllers\CalculatorController::class, 'ans_n1'])->name('test-n1.ans');
+    Route::get('/data-n1', function(){
+        $n1 = N1::all();
+        return DataTables::of($n1)
+            ->make(true);
+    })->name('data-n1');
 });

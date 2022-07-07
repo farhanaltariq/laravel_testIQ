@@ -1,5 +1,5 @@
         <!-- Bootstrap core JavaScript-->
-        <script src="{{ asset('sb_ui') }}/vendor/jquery/jquery.min.js"></script>
+        {{-- <script src="{{ asset('sb_ui') }}/vendor/jquery/jquery.min.js"></script> --}}
         <script src="{{ asset('sb_ui') }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
         <!-- Core plugin JavaScript-->

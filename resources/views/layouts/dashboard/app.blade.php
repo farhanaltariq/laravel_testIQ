@@ -6,7 +6,8 @@
         <div id="content-wrapper" class="d-flex flex-column">
             <div id="content">
                 @include('layouts.dashboard.navbar')
-                <div class="container-fluid">
+                <div class="container-fluid pt-2">
+                    @include('layouts.alert')
                     @yield('content')
                 </div>
                 @include('layouts.dashboard.footer')

@@ -60,7 +60,7 @@
                         <a class="collapse-item" href="">Test N</a>
                         <a class="collapse-item" href="">Test A</a>
                         <a class="collapse-item" href="">Test C</a>
-                        <a class="collapse-item" href="">Test N1</a>
+                        <a class="collapse-item" href="{{ route('test-n1') }}">Test N1</a>
                         <a class="collapse-item" href="">Test N2</a>
                         <a class="collapse-item" href="">Test N3</a>
                     </div>
