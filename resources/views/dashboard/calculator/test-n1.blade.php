@@ -25,104 +25,74 @@
                 </div>
             </div>
         </div>
+    </div>
 </div>
-
-{{-- <table class="table table-bordered">
-    <thead>
-        <th colspan="25" class="text-center">Kunci Jawaban</th>
-    </thead>
-    <thead>
-        @php
-           for($i=1; $i<=25; $i++) {
-               echo "<th>$i</th>";
-           }
-        @endphp
-    </thead>
-    <tbody>
-        @foreach ($key as $k)
-        <tr>
-            <td>{{ $k->ans1 }}</td>
-            <td>{{ $k->ans2 }}</td>
-            <td>{{ $k->ans3 }}</td>
-            <td>{{ $k->ans4 }}</td>
-            <td>{{ $k->ans5 }}</td>
-            <td>{{ $k->ans6 }}</td>
-            <td>{{ $k->ans7 }}</td>
-            <td>{{ $k->ans8 }}</td>
-            <td>{{ $k->ans9 }}</td>
-            <td>{{ $k->ans10 }}</td>
-            <td>{{ $k->ans11 }}</td>
-            <td>{{ $k->ans12 }}</td>
-            <td>{{ $k->ans13 }}</td>
-            <td>{{ $k->ans14 }}</td>
-            <td>{{ $k->ans15 }}</td>
-            <td>{{ $k->ans16 }}</td>
-            <td>{{ $k->ans17 }}</td>
-            <td>{{ $k->ans18 }}</td>
-            <td>{{ $k->ans19 }}</td>
-            <td>{{ $k->ans20 }}</td>
-            <td>{{ $k->ans21 }}</td>
-            <td>{{ $k->ans22 }}</td>
-            <td>{{ $k->ans23 }}</td>
-            <td>{{ $k->ans24 }}</td>
-            <td>{{ $k->ans25 }}</td>
-        </tr>
-        @endforeach
-    </tbody>
-</table> --}}
-
-{{-- <table class="table table-striped my-3">
-    <thead>
-        <th rowspan="2" class="text-center">Nama</th>
-        <th colspan="25" class="text-center">Jawaban</th>
-    </thead>
-    <thead>
-        <th></th>
-        @php
-           for($i=1; $i<=25; $i++) {
-               echo "<th>$i</th>";
-           }
-        @endphp
-    </thead>
-    <tbody>
-        @foreach ($n1 as $n)
-        <tr>
-            <td>{{ $n->nama }}</td>
-            <td>{{ $n->ans1 }}</td>
-            <td>{{ $n->ans2 }}</td>
-            <td>{{ $n->ans3 }}</td>
-            <td>{{ $n->ans4 }}</td>
-            <td>{{ $n->ans5 }}</td>
-            <td>{{ $n->ans6 }}</td>
-            <td>{{ $n->ans7 }}</td>
-            <td>{{ $n->ans8 }}</td>
-            <td>{{ $n->ans9 }}</td>
-            <td>{{ $n->ans10 }}</td>
-            <td>{{ $n->ans11 }}</td>
-            <td>{{ $n->ans12 }}</td>
-            <td>{{ $n->ans13 }}</td>
-            <td>{{ $n->ans14 }}</td>
-            <td>{{ $n->ans15 }}</td>
-            <td>{{ $n->ans16 }}</td>
-            <td>{{ $n->ans17 }}</td>
-            <td>{{ $n->ans18 }}</td>
-            <td>{{ $n->ans19 }}</td>
-            <td>{{ $n->ans20 }}</td>
-            <td>{{ $n->ans21 }}</td>
-            <td>{{ $n->ans22 }}</td>
-            <td>{{ $n->ans23 }}</td>
-            <td>{{ $n->ans24 }}</td>
-            <td>{{ $n->ans25 }}</td>
-        </tr>
-        <tr>
-            <td>Nilai</td>
-            <td>{{ $n->ans1 == $key[0]->ans1 ? '1' : '0' }}</td>
-        </tr>
-        @endforeach
-    </tbody>
-</table> --}}
-<div class="container-fluid">
-            {{-- <h1 class="mb-4 text-center">How to Use Yajra Datatables in Laravel 8</h1> --}}
+<div class="container-fluid card border-left-info shadow h-80 mb-3">
+    <div class="card-header text-center"><h4>Daftar Nilai</h4></div>
+    {{-- search form --}}
+    <form class="form-inline" action="{{ route('test-n1') }}">
+        <label class="sr-only" for="inlineFormInputName2">Name</label>
+        <input name="search" type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Cari Nama ...">
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </form>
+    <div class="row">
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Nama</th>
+                    <th>Nilai</th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    @foreach ($n1 as $item)
+                        {{-- hitung nilai --}}
+                        @php
+                            $nilai = 0;
+                            $item->ans1 == $answer[1] ? $nilai += 1 : null;
+                            $item->ans2 == $answer[2] ? $nilai += 1 : null;
+                            $item->ans3 == $answer[3] ? $nilai += 1 : null;
+                            $item->ans4 == $answer[4] ? $nilai += 1 : null;
+                            $item->ans5 == $answer[5] ? $nilai += 1 : null;
+                            $item->ans6 == $answer[6] ? $nilai += 1 : null;
+                            $item->ans7 == $answer[7] ? $nilai += 1 : null;
+                            $item->ans8 == $answer[8] ? $nilai += 1 : null;
+                            $item->ans9 == $answer[9] ? $nilai += 1 : null;
+                            $item->ans10 == $answer[10] ? $nilai += 1 : null;
+                            $item->ans11 == $answer[11] ? $nilai += 1 : null;
+                            $item->ans12 == $answer[12] ? $nilai += 1 : null;
+                            $item->ans13 == $answer[13] ? $nilai += 1 : null;
+                            $item->ans14 == $answer[14] ? $nilai += 1 : null;
+                            $item->ans15 == $answer[15] ? $nilai += 1 : null;
+                            $item->ans16 == $answer[16] ? $nilai += 1 : null;
+                            $item->ans17 == $answer[17] ? $nilai += 1 : null;
+                            $item->ans18 == $answer[18] ? $nilai += 1 : null;
+                            $item->ans19 == $answer[19] ? $nilai += 1 : null;
+                            $item->ans20 == $answer[20] ? $nilai += 1 : null;
+                            $item->ans21 == $answer[21] ? $nilai += 1 : null;
+                            $item->ans22 == $answer[22] ? $nilai += 1 : null;
+                            $item->ans23 == $answer[23] ? $nilai += 1 : null;
+                            $item->ans24 == $answer[24] ? $nilai += 1 : null;
+                            $item->ans25 == $answer[25] ? $nilai += 1 : null;
+                        @endphp
+                    <tr>
+                        <td>{{ $item->nama }}</td>
+                        <td>{{ $nilai }}</td>
+                        <td>
+                            <a href="">Lihat Jawaban</a>
+                        </td>
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
+            {{ $n1->links("pagination::bootstrap-4") }}
+        </div>
+    </div>
+</div>
+{{-- 
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card border-left-primary shadow h-80 my-3 px-3">
+            <div class="my-3 text-center h4">Daftar Nilai</div>
             <table class="table table-bordered yajra-datatable">
                 <thead>
                     <tr>
@@ -138,48 +108,46 @@
                 </tbody>
             </table>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>  
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
-        <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-        <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
-        <script type="text/javascript">
-        $(function () {
-          
-          var table = $('.yajra-datatable').DataTable({
-              processing: true,
-              serverSide: true,
-              ajax: "{{ route('data-n1') }}",
-              columns: [
-                    {data: 'nama', name: 'nama'},
-                    {data: 'ans1', name: 'ans1'},
-                    {data: 'ans2', name: 'ans2'},
-                    {data: 'ans3', name: 'ans3'},
-                    {data: 'ans4', name: 'ans4'},
-                    {data: 'ans5', name: 'ans5'},
-                    {data: 'ans6', name: 'ans6'},
-                    {data: 'ans7', name: 'ans7'},
-                    {data: 'ans8', name: 'ans8'},
-                    {data: 'ans9', name: 'ans9'},
-                    {data: 'ans10', name: 'ans10'},
-                    {data: 'ans11', name: 'ans11'},
-                    {data: 'ans12', name: 'ans12'},
-                    {data: 'ans13', name: 'ans13'},
-                    {data: 'ans14', name: 'ans14'},
-                    {data: 'ans15', name: 'ans15'},
-                    {data: 'ans16', name: 'ans16'},
-                    {data: 'ans17', name: 'ans17'},
-                    {data: 'ans18', name: 'ans18'},
-                    {data: 'ans19', name: 'ans19'},
-                    {data: 'ans20', name: 'ans20'},
-                    {data: 'ans21', name: 'ans21'},
-                    {data: 'ans22', name: 'ans22'},
-                    {data: 'ans23', name: 'ans23'},
-                    {data: 'ans24', name: 'ans24'},
-                    {data: 'ans25', name: 'ans25'},
-              ]
-          });
-          
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        
+        var table = $('.yajra-datatable').DataTable({
+            processing: true,
+            serverSide: true,
+            ajax: "{{ route('data-n1') }}",
+            columns: [
+                {data: 'nama', name: 'nama'},
+                {data: 'ans1', name: 'ans1'},
+                {data: 'ans2', name: 'ans2'},
+                {data: 'ans3', name: 'ans3'},
+                {data: 'ans4', name: 'ans4'},
+                {data: 'ans5', name: 'ans5'},
+                {data: 'ans6', name: 'ans6'},
+                {data: 'ans7', name: 'ans7'},
+                {data: 'ans8', name: 'ans8'},
+                {data: 'ans9', name: 'ans9'},
+                {data: 'ans10', name: 'ans10'},
+                {data: 'ans11', name: 'ans11'},
+                {data: 'ans12', name: 'ans12'},
+                {data: 'ans13', name: 'ans13'},
+                {data: 'ans14', name: 'ans14'},
+                {data: 'ans15', name: 'ans15'},
+                {data: 'ans16', name: 'ans16'},
+                {data: 'ans17', name: 'ans17'},
+                {data: 'ans18', name: 'ans18'},
+                {data: 'ans19', name: 'ans19'},
+                {data: 'ans20', name: 'ans20'},
+                {data: 'ans21', name: 'ans21'},
+                {data: 'ans22', name: 'ans22'},
+                {data: 'ans23', name: 'ans23'},
+                {data: 'ans24', name: 'ans24'},
+                {data: 'ans25', name: 'ans25'},
+            ]
         });
-    </script>
+        
+    });
+</script>
+ --}}
 @endsection

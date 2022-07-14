@@ -7,6 +7,7 @@ use Maatwebsite\Excel\Facades\Excel;
 use App\Imports\N1Import;
 use App\Models\N1;
 use App\Models\Key_N1;
+
 class CalculatorController extends Controller
 {
     /**
@@ -14,11 +15,18 @@ class CalculatorController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function test_n1()
+    public function test_n1(Request $request)
     {
-        $n1 = N1::all();
-        $key = Key_N1::all();
-        return view('dashboard.calculator.test-n1', compact('n1', 'key'));
+        if($request->search)
+            $n1 = N1::where('nama', 'like', '%'.$request->search.'%')->orderBy('id', 'desc')->paginate(5);
+        else
+            $n1 = N1::orderBy('id', 'desc')->paginate(5);
+        $keys = Key_N1::all();
+        $answer[0] = '';
+        foreach($keys as $key){
+            $answer[] = $key->answer;
+        }
+        return view('dashboard.calculator.test-n1', compact('n1', 'answer'));
     }
     public function ans_n1(Request $request){
         // validate file

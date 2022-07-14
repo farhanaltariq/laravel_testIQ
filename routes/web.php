@@ -34,4 +34,9 @@ Route::middleware(['auth'])->group(function () {
         return DataTables::of($n1)
             ->make(true);
     })->name('data-n1');
+    Route::get('/profile', [App\Http\Controllers\UserController::class, 'index'])->name('user.index');
+});
+
+Route::any('/{any}', function(){
+    return view('layouts.extras.404');
 });

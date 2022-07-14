@@ -3,51 +3,92 @@
 @section('title', 'Dashboard')
 
 @section('content')
-<script language="javascript">
+	<div class="container text-center text-info">
+		<span class="h3">Welcome, {{ Auth::user()->name ?? null }}</span>
+	</div>
+	<div class="container my-3">
+		<div class="row">
 
-function createTable() {
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                Earnings (Monthly)</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-    // Get the data
-	var excelData = document.getElementById('csv').value;
-	
-    // split into rows
-    excelRow = excelData.split(String.fromCharCode(10));
+                        <!-- Earnings (Annual) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                Earnings (Annual)</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-    // split rows into columns
-    for (i=0; i<excelRow.length; i++) {
-        excelRow[i] = excelRow[i].split(String.fromCharCode(9));
+                        <!-- Tasks Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="progress progress-sm mr-2">
+                                                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-    }
-	
-	// start to create the HTML table
-	var myTable = document.createElement("table");
-    myTable.setAttribute("class", "table table-striped");
-	var myTbody = document.createElement("tbody");
-	
-	// Loop over the rows
-    for (i=0; i<excelRow.length - 1; i++) {
-
-		// create a row in the HTML table
-		var myRow = document.createElement("tr");
-		
-		// Loop over the columns and add TD to the TR
-		for (j=0; j<excelRow[i].length; j++) {
-			// Loop over the row columns
-			if (excelRow[i][j].length != 0) {
-					var myCell = document.createElement("td");
-					myCell.innerHTML = excelRow[i][j];
-            }			
-			myRow.appendChild(myCell);			
-		}
-		myTbody.appendChild(myRow);	
-	}
-		myTable.appendChild(myTbody);
-
-    document.getElementById('datas').appendChild(myTable);
-	// console.log(myTable)
-}
-</script>
-<div id="datas"></div>
-<textarea id="csv" placeholder="Paste XLSX content here" style="width: 100%; height: 50px;"></textarea><br/>
-<input type="button" value="Hitung" onclick="createTable()" >
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                Pending Requests</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+	</div>
 @endsection

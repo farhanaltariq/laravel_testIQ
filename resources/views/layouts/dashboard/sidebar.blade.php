@@ -35,7 +35,7 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="buttons.html">Profile</a>
+                        <a class="collapse-item" href="{{ route('user.index') }}">Profile</a>
                         <a class="collapse-item" href="cards.html">Privacy</a>
                     </div>
                 </div>

@@ -19,5 +19,7 @@ class DatabaseSeeder extends Seeder
         if(\App\Models\Key_N1::count() == 0){
             $this->call(Key_N1Seeder::class);
         }
+        if(\App\Models\User::count() == 0)
+            $this->call(UserSeeder::class);
     }
 }
