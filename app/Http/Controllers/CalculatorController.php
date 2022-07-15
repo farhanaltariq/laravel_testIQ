@@ -30,14 +30,28 @@ class CalculatorController extends Controller
     }
     public function ans_n1(Request $request){
         // validate file
-        $this->validate($request, [
-            'file' => 'required|mimes:xls,xlsx'
-        ]);
-        Excel::import(new N1Import, $request->file('file'));
-        return redirect()->route('test-n1')->with('success', 'Data imported successfully.');
+        try{
+            $this->validate($request, [
+                'file' => 'required|mimes:xls,xlsx'
+            ]);
+            Excel::import(new N1Import, $request->file('file'));
+            return redirect()->route('test-n1')->with('success', 'Data imported successfully.');
+        } catch (\Exception $e){
+            return redirect()->route('test-n1')->with('error', 'Invalid answer format.');
+        }
     }
-    public function data_n1(){
-        $n1 = N1::all();
-        return DataTables::of($n1)->make(true);
+    public function show_n1($id){
+        $n1 = N1::find($id);
+        $keys = Key_N1::all();
+        $answer[0] = '';
+        foreach($keys as $key){
+            $answer[] = $key->answer;
+        }
+        return view('dashboard.calculator.test-n1-show', compact('n1', 'answer'));
+    }
+    public function destroy_n1($id){
+        $n1 = N1::find($id);
+        $n1->delete();
+        return redirect()->route('test-n1')->with('success', 'Data deleted successfully.');
     }
 }

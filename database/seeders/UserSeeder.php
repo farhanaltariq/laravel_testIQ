@@ -18,6 +18,8 @@ class UserSeeder extends Seeder
         $user->name = 'Admin';
         $user->email = 'admin@bpi.co.id';
         $user->password = bcrypt('adminbpi2022');
+        $user->status = 'active';
+        $user->role = 'superuser';
         $user->save();
     }
 }

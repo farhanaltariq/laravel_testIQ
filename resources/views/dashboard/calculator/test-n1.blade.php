@@ -41,6 +41,7 @@
                 <thead>
                     <th>Nama</th>
                     <th>Nilai</th>
+                    <th>Tanggal</th>
                     <th></th>
                 </thead>
                 <tbody>
@@ -77,8 +78,16 @@
                     <tr>
                         <td>{{ $item->nama }}</td>
                         <td>{{ $nilai }}</td>
+                        <td>{{ $item->created_at }}</td>
                         <td>
-                            <a href="">Lihat Jawaban</a>
+                            <a href="{{ route('test-n1.show', $item->id) }}">Lihat Jawaban</a>
+                        </td>
+                        <td>
+                            <form action="{{ route('test-n1.destroy', $item->id) }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger">Hapus</button>
+                            </form>
                         </td>
                     </tr>
                     @endforeach
@@ -88,66 +97,4 @@
         </div>
     </div>
 </div>
-{{-- 
-<div class="row">
-    <div class="col-xl-12">
-        <div class="card border-left-primary shadow h-80 my-3 px-3">
-            <div class="my-3 text-center h4">Daftar Nilai</div>
-            <table class="table table-bordered yajra-datatable">
-                <thead>
-                    <tr>
-                        <th>Nama</th>
-                        @php
-                            for($i=1; $i<=25; $i++) {
-                                echo "<th>$i</th>";
-                            }
-                        @endphp
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
-<script type="text/javascript">
-    $(function () {
-        
-        var table = $('.yajra-datatable').DataTable({
-            processing: true,
-            serverSide: true,
-            ajax: "{{ route('data-n1') }}",
-            columns: [
-                {data: 'nama', name: 'nama'},
-                {data: 'ans1', name: 'ans1'},
-                {data: 'ans2', name: 'ans2'},
-                {data: 'ans3', name: 'ans3'},
-                {data: 'ans4', name: 'ans4'},
-                {data: 'ans5', name: 'ans5'},
-                {data: 'ans6', name: 'ans6'},
-                {data: 'ans7', name: 'ans7'},
-                {data: 'ans8', name: 'ans8'},
-                {data: 'ans9', name: 'ans9'},
-                {data: 'ans10', name: 'ans10'},
-                {data: 'ans11', name: 'ans11'},
-                {data: 'ans12', name: 'ans12'},
-                {data: 'ans13', name: 'ans13'},
-                {data: 'ans14', name: 'ans14'},
-                {data: 'ans15', name: 'ans15'},
-                {data: 'ans16', name: 'ans16'},
-                {data: 'ans17', name: 'ans17'},
-                {data: 'ans18', name: 'ans18'},
-                {data: 'ans19', name: 'ans19'},
-                {data: 'ans20', name: 'ans20'},
-                {data: 'ans21', name: 'ans21'},
-                {data: 'ans22', name: 'ans22'},
-                {data: 'ans23', name: 'ans23'},
-                {data: 'ans24', name: 'ans24'},
-                {data: 'ans25', name: 'ans25'},
-            ]
-        });
-        
-    });
-</script>
- --}}
 @endsection

@@ -36,7 +36,9 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="{{ route('user.index') }}">Profile</a>
-                        <a class="collapse-item" href="cards.html">Privacy</a>
+                        @if(Auth::user()->role == 'superuser')
+                            <a class="collapse-item" href="cards.html">Manage Users</a>
+                        @endif
                     </div>
                 </div>
             </li>
@@ -53,13 +55,13 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" id="col3" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                     <i class="fas fa-calculator"></i>
-                    <span>Kalkulator</span>
+                    <span>Calculator</span>
                 </a>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="">Test N</a>
-                        <a class="collapse-item" href="">Test A</a>
-                        <a class="collapse-item" href="">Test C</a>
+                        <a class="collapse-item" href="">Test V</a>
+                        {{-- <a class="collapse-item" href="">Test A</a>
+                        <a class="collapse-item" href="">Test C</a> --}}
                         <a class="collapse-item" href="{{ route('test-n1') }}">Test N1</a>
                         <a class="collapse-item" href="">Test N2</a>
                         <a class="collapse-item" href="">Test N3</a>
