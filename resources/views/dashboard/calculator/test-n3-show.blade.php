@@ -23,9 +23,9 @@
         </tbody>
     </table>
 </div>
-<form action="{{ route('test-n3.update', $n1->id) }}" method="POST">
+<form action="{{ route('test-n3.update', $n3->id) }}" method="POST">
     <div class="container-fluid card border-left-info shadow h-80 mb-3">
-    <div class="card-header text-center"><h4>Jawaban <input type="text" class="text-secondary" style="border: none" name="nama" value="{{ $n1->nama }}"></h4></div>
+    <div class="card-header text-center"><h4>Jawaban <input type="text" class="text-secondary" style="border: none" name="nama" value="{{ $n3->nama }}"></h4></div>
         @csrf
         @method('PUT')
         <div class="row">
@@ -35,43 +35,43 @@
                         <tr>
                             <td>1</td>
                             <td>
-                                <input class="form-control" type="text" name="ans1" value="{{ $n1->ans1 }}">
+                                <input class="form-control" type="text" name="ans1" value="{{ $n3->ans1 }}">
                             </td>
                         </tr>
                         <tr>
                             <td>2</td>
                             <td>
-                                <input class="form-control" type="text" name="ans2" value="{{ $n1->ans2 }}">
+                                <input class="form-control" type="text" name="ans2" value="{{ $n3->ans2 }}">
                             </td>
                         </tr>
                         <tr>
                             <td>3</td>
                             <td>
-                                <input class="form-control" type="text" name="ans3" value="{{ $n1->ans3 }}">
+                                <input class="form-control" type="text" name="ans3" value="{{ $n3->ans3 }}">
                             </td>
                         </tr>
                         <tr>
                             <td>4</td>
                             <td>
-                                <input class="form-control" type="text" name="ans4" value="{{ $n1->ans4 }}">
+                                <input class="form-control" type="text" name="ans4" value="{{ $n3->ans4 }}">
                             </td>
                         </tr>
                         <tr>
                             <td>5</td>
                             <td>
-                                <input class="form-control" type="text" name="ans5" value="{{ $n1->ans5 }}">
+                                <input class="form-control" type="text" name="ans5" value="{{ $n3->ans5 }}">
                             </td>
                         </tr>
                         <tr>
                             <td>6</td>
                             <td>
-                                <input class="form-control" type="text" name="ans6" value="{{ $n1->ans6 }}">
+                                <input class="form-control" type="text" name="ans6" value="{{ $n3->ans6 }}">
                             </td>
                         </tr>
                         <tr>
                             <td>7</td>
                             <td>
-                                <input class="form-control" type="text" name="ans7" value="{{ $n1->ans7 }}">
+                                <input class="form-control" type="text" name="ans7" value="{{ $n3->ans7 }}">
                             </td>
                         </tr>
                     </tbody>
@@ -84,43 +84,43 @@
                         <tr>
                             <td>8</td>
                             <td>
-                                <input class="form-control" type="text" name="ans8" value="{{ $n1->ans8 }}">
+                                <input class="form-control" type="text" name="ans8" value="{{ $n3->ans8 }}">
                             </td>
                         </tr>
                         <tr>
                             <td>9</td>
                             <td>
-                                <input class="form-control" type="text" name="ans9" value="{{ $n1->ans9 }}">
+                                <input class="form-control" type="text" name="ans9" value="{{ $n3->ans9 }}">
                             </td>
                         </tr>
                         <tr>
                             <td>10</td>
                             <td>
-                                <input class="form-control" type="text" name="ans10" value="{{ $n1->ans10 }}">
+                                <input class="form-control" type="text" name="ans10" value="{{ $n3->ans10 }}">
                             </td>
                         </tr>
                         <tr>
                             <td>11</td>
                             <td>
-                                <input class="form-control" type="text" name="ans11" value="{{ $n1->ans11 }}">
+                                <input class="form-control" type="text" name="ans11" value="{{ $n3->ans11 }}">
                             </td>
                         </tr>
                         <tr>
                             <td>12</td>
                             <td>
-                                <input class="form-control" type="text" name="ans12" value="{{ $n1->ans12 }}">
+                                <input class="form-control" type="text" name="ans12" value="{{ $n3->ans12 }}">
                             </td>
                         </tr>
                         <tr>
                             <td>13</td>
                             <td>
-                                <input class="form-control" type="text" name="ans13" value="{{ $n1->ans13 }}">
+                                <input class="form-control" type="text" name="ans13" value="{{ $n3->ans13 }}">
                             </td>
                         </tr>
                         <tr>
                             <td>14</td>
                             <td>
-                                <input class="form-control" type="text" name="ans14" value="{{ $n1->ans14 }}">
+                                <input class="form-control" type="text" name="ans14" value="{{ $n3->ans14 }}">
                             </td>
                         </tr>
                     </tbody>
@@ -133,80 +133,44 @@
                         <tr>
                             <td>15</td>
                             <td>
-                                <input class="form-control" type="text" name="ans15" value="{{ $n1->ans15 }}">
+                                <input class="form-control" type="text" name="ans15" value="{{ $n3->ans15 }}">
                             </td>
                         </tr>
                         <tr>
                             <td>16</td>
                             <td>
-                                <input class="form-control" type="text" name="ans16" value="{{ $n1->ans16 }}">
+                                <input class="form-control" type="text" name="ans16" value="{{ $n3->ans16 }}">
                             </td>
                         </tr>
                         <tr>
                             <td>17</td>
                             <td>
-                                <input class="form-control" type="text" name="ans17" value="{{ $n1->ans17 }}">
+                                <input class="form-control" type="text" name="ans17" value="{{ $n3->ans17 }}">
                             </td>
                         </tr>
                         <tr>
                             <td>18</td>
                             <td>
-                                <input class="form-control" type="text" name="ans18" value="{{ $n1->ans18 }}">
+                                <input class="form-control" type="text" name="ans18" value="{{ $n3->ans18 }}">
                             </td>
                         </tr>
                         <tr>
                             <td>19</td>
                             <td>
-                                <input class="form-control" type="text" name="ans19" value="{{ $n1->ans19 }}">
+                                <input class="form-control" type="text" name="ans19" value="{{ $n3->ans19 }}">
                             </td>
                         </tr>
                         <tr>
                             <td>20</td>
                             <td>
-                                <input class="form-control" type="text" name="ans20" value="{{ $n1->ans20 }}">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>21</td>
-                            <td>
-                                <input class="form-control" type="text" name="ans21" value="{{ $n1->ans21 }}">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-    
-            <div class="card-body">
-                <table class="table table-striped">
-                    <tbody>
-                        <tr>
-                            <td>22</td>
-                            <td>
-                                <input class="form-control" type="text" name="ans22" value="{{ $n1->ans22 }}">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>23</td>
-                            <td>
-                                <input class="form-control" type="text" name="ans23" value="{{ $n1->ans23 }}">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>24</td>
-                            <td>
-                                <input class="form-control" type="text" name="ans24" value="{{ $n1->ans24 }}">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>25</td>
-                            <td>
-                                <input class="form-control" type="text" name="ans25" value="{{ $n1->ans25 }}">
+                                <input class="form-control" type="text" name="ans20" value="{{ $n3->ans20 }}">
                             </td>
                         </tr>
                     </tbody>
                 </table>
                 <button class="btn btn-info">Update</button>
             </div>
+    
         </div>
     </div>
 </form>

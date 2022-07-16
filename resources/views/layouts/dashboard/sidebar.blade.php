@@ -64,7 +64,7 @@
                         <a class="collapse-item" href="">Test C</a> --}}
                         <a class="collapse-item" href="{{ route('test-n1') }}">Test N1</a>
                         <a class="collapse-item" href="">Test N2</a>
-                        <a class="collapse-item" href="">Test N3</a>
+                        <a class="collapse-item" href="{{ route('test-n3') }}">Test N3</a>
                     </div>
                 </div>
             </li>

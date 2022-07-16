@@ -16,6 +16,9 @@ class CreateN3STable extends Migration
         Schema::create('N3', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
+            $table->string('tgl_lahir');
+            $table->string('jenis_kelamin');
+            $table->string('alamat');
             $table->string('ans1', 1);
             $table->string('ans2', 1);
             $table->string('ans3', 1);
