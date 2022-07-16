@@ -14,16 +14,16 @@
         <title>@yield('title')</title>
 
         <!-- Styles -->
-        <link rel='stylesheet' href="{{ asset('webSPP') }}/assets/css/bootstrap.min.css">
-        <link rel='stylesheet' href="{{ asset('webSPP') }}/assets/css/animate.min.css">
-        <link rel='stylesheet' href="{{ asset('webSPP') }}/assets/css/font-awesome.min.css" />
-        <link rel='stylesheet' href="{{ asset('webSPP') }}/assets/css/style.css" />
+        <link rel='stylesheet' href="{{ secure_asset('webSPP') }}/assets/css/bootstrap.min.css">
+        <link rel='stylesheet' href="{{ secure_asset('webSPP') }}/assets/css/animate.min.css">
+        <link rel='stylesheet' href="{{ secure_asset('webSPP') }}/assets/css/font-awesome.min.css" />
+        <link rel='stylesheet' href="{{ secure_asset('webSPP') }}/assets/css/style.css" />
 
         <!-- Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
         <!-- Favicon -->
-        <link rel="icon" href="{{ asset('webSPP') }}/assets/img/brand/box2.png" type="image/png">
+        <link rel="icon" href="{{ secure_asset('webSPP') }}/assets/img/brand/box2.png" type="image/png">
 
 
     </head>
@@ -63,7 +63,7 @@
                             <a href="#contactarea">Contact</a>
                         </li>
                         <li>
-                            <a href="login"><img src="{{ asset('webSPP') }}/assets/img/icons/png/100-log-in.png" width="30" alt="login"></a>
+                            <a href="login"><img src="{{ secure_asset('webSPP') }}/assets/img/icons/png/100-log-in.png" width="30" alt="login"></a>
                         </li>
                     </ul>
                 </nav>
@@ -88,14 +88,14 @@
         <!-- Bootstrap core JavaScript
 		================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="{{ asset('webSPP') }}/assets/js/jquery.min.js"></script>
-        <script src="{{ asset('webSPP') }}/assets/js/bootstrap.min.js"></script>
-        <script src="{{ asset('webSPP') }}/assets/js/waypoints.min.js"></script>
-        <script src="{{ asset('webSPP') }}/assets/js/jquery.scrollTo.min.js"></script>
-        <script src="{{ asset('webSPP') }}/assets/js/jquery.localScroll.min.js"></script>
-        <script src="{{ asset('webSPP') }}/assets/js/jquery.magnific-popup.min.js"></script>
-        <script src="{{ asset('webSPP') }}/assets/js/validate.js"></script>
-        <script src="{{ asset('webSPP') }}/assets/js/common.js"></script>
+        <script src="{{ secure_asset('webSPP') }}/assets/js/jquery.min.js"></script>
+        <script src="{{ secure_asset('webSPP') }}/assets/js/bootstrap.min.js"></script>
+        <script src="{{ secure_asset('webSPP') }}/assets/js/waypoints.min.js"></script>
+        <script src="{{ secure_asset('webSPP') }}/assets/js/jquery.scrollTo.min.js"></script>
+        <script src="{{ secure_asset('webSPP') }}/assets/js/jquery.localScroll.min.js"></script>
+        <script src="{{ secure_asset('webSPP') }}/assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="{{ secure_asset('webSPP') }}/assets/js/validate.js"></script>
+        <script src="{{ secure_asset('webSPP') }}/assets/js/common.js"></script>
     </body>
 
 </html>
