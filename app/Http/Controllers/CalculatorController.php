@@ -103,4 +103,9 @@ class CalculatorController extends Controller
         N3::find($id)->update($request->all());
         return redirect()->route('test-n3', $id)->with('success', 'Data updated successfully.');
     }
+    public function destroy_n3($id){
+        $N3 = N3::find($id);
+        $N3->delete();
+        return redirect()->route('test-n3')->with('success', 'Data deleted successfully.');
+    }
 }

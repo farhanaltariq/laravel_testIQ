@@ -28,12 +28,14 @@
     </div>
 </div>
 <div class="container-fluid card border-left-info shadow h-80 mb-3">
-    <div class="card-header text-center"><h4>Daftar Nilai</h4></div>
+    <div class="card-header text-center"><h4>Daftar Nilai Tes N3</h4></div>
     {{-- search form --}}
     <form class="form-inline" action="{{ route('test-n3') }}">
         <label class="sr-only" for="inlineFormInputName2">Name</label>
         <input name="search" type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Cari Nama ...">
-        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        <button type="submit" class="btn btn-primary mb-2">
+            <i class="fas fa-search"></i>
+        </button>
     </form>
     <div class="row">
         <div class="card-body">

@@ -40,7 +40,11 @@ Route::middleware(['auth', 'active'])->group(function () {
     Route::delete('/test-n3/{id}', [App\Http\Controllers\CalculatorController::class, 'destroy_n3'])->name('test-n3.destroy');
 
     Route::get('/profile', [App\Http\Controllers\UserController::class, 'index'])->name('user.index');
+    Route::get('/profile/create', [App\Http\Controllers\UserController::class, 'create'])->name('user.create');
+    Route::post('/profile/create', [App\Http\Controllers\UserController::class, 'store'])->name('user.store');
     Route::put('/profile', [App\Http\Controllers\UserController::class, 'update'])->name('user.update');
+    Route::get('/users', [App\Http\Controllers\UserController::class, 'lists'])->name('user.lists');
+    Route::put('/users/{id}', [App\Http\Controllers\UserController::class, 'updateStatus'])->name('user.updateStatus');
 });
 
 Route::any('/{any}', function(){

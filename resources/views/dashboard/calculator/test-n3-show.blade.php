@@ -9,7 +9,7 @@
         <thead>
             <th></th>
             @php
-                for ($i=1; $i <= 25; $i++) { 
+                for ($i=1; $i <= 20; $i++) { 
                     echo '<th>'.$i.'</th>';
                 }
             @endphp

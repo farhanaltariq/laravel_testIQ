@@ -4,7 +4,7 @@
 
 @section('content')
 	<div class="container text-center text-info">
-		<span class="h3">Welcome, {{ Auth::user()->name ?? null }}</span>
+		<span class="h3">Selamat Datang, {{ Auth::user()->name ?? null }}</span>
 	</div>
 	<div class="container my-3">
 		<div class="row">
@@ -15,8 +15,8 @@
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
                                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                        Profile</div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">Update profile</div>
+                                        Profil</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">Pengaturan profil</div>
                                 </div>
                                 <div class="col-auto">
                                     <i class="fas fa-calculator fa-2x text-gray-300"></i>
@@ -36,7 +36,7 @@
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
                                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                        Calculator</div>
+                                        Kalkulator</div>
                                     <div class="h5 mb-0 font-weight-bold text-gray-800">Test V</div>
                                 </div>
                                 <div class="col-auto">
@@ -55,7 +55,7 @@
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
                                     <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                        Calculator</div>
+                                        Kalkulator</div>
                                     <div class="h5 mb-0 font-weight-bold text-gray-800">Test N1</div>
                                 </div>
                                 <div class="col-auto">
@@ -74,7 +74,7 @@
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
                                     <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                        Calculator</div>
+                                        Kalkulator</div>
                                     <div class="h5 mb-0 font-weight-bold text-gray-800">Test N2</div>
                                 </div>
                                 <div class="col-auto">
@@ -93,7 +93,7 @@
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
                                     <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                        Calculator</div>
+                                        Kalkulator</div>
                                     <div class="h5 mb-0 font-weight-bold text-gray-800">Test N3</div>
                                 </div>
                                 <div class="col-auto">
