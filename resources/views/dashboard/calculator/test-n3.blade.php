@@ -10,9 +10,9 @@
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                            Upload Excel - Test N1</div>
+                            Upload Excel - Test N3</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-400">
-                            <form action="{{ route('test-n1.ans') }}" enctype="multipart/form-data" class="form-inline" method="POST">
+                            <form action="{{ route('test-n3.ans') }}" enctype="multipart/form-data" class="form-inline" method="POST">
                                 @csrf
                                 <input type="file" name="file" class="form-control mb-2 mr-sm-2">
                                 <button type="submit" class="btn btn-primary mb-2">Upload</button>
@@ -28,9 +28,9 @@
     </div>
 </div>
 <div class="container-fluid card border-left-info shadow h-80 mb-3">
-    <div class="card-header text-center"><h4>Daftar Nilai Tes N1</h4></div>
+    <div class="card-header text-center"><h4>Daftar Nilai Tes N3</h4></div>
     {{-- search form --}}
-    <form class="form-inline" action="{{ route('test-n1') }}">
+    <form class="form-inline" action="{{ route('test-n3') }}">
         <label class="sr-only" for="inlineFormInputName2">Name</label>
         <input name="search" type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Cari Nama ...">
         <button type="submit" class="btn btn-primary mb-2">
@@ -47,7 +47,7 @@
                     <th></th>
                 </thead>
                 <tbody>
-                    @foreach ($n1 as $item)
+                    @foreach ($n3 as $item)
                         {{-- hitung nilai --}}
                         @php
                             $nilai = 0;
@@ -71,21 +71,16 @@
                             $item->ans18 == $answer[18] ? $nilai += 1 : null;
                             $item->ans19 == $answer[19] ? $nilai += 1 : null;
                             $item->ans20 == $answer[20] ? $nilai += 1 : null;
-                            $item->ans21 == $answer[21] ? $nilai += 1 : null;
-                            $item->ans22 == $answer[22] ? $nilai += 1 : null;
-                            $item->ans23 == $answer[23] ? $nilai += 1 : null;
-                            $item->ans24 == $answer[24] ? $nilai += 1 : null;
-                            $item->ans25 == $answer[25] ? $nilai += 1 : null;
                         @endphp
                     <tr>
                         <td>{{ $item->nama }}</td>
                         <td>{{ $nilai }}</td>
                         <td>{{ $item->created_at }}</td>
                         <td>
-                            <a href="{{ route('test-n1.show', $item->id) }}">Lihat Jawaban</a>
+                            <a href="{{ route('test-n3.show', $item->id) }}">Lihat Jawaban</a>
                         </td>
                         <td>
-                            <form action="{{ route('test-n1.destroy', $item->id) }}" method="POST">
+                            <form action="{{ route('test-n3.destroy', $item->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger">Hapus</button>
@@ -95,7 +90,7 @@
                     @endforeach
                 </tbody>
             </table>
-            {{ $n1->links("pagination::bootstrap-4") }}
+            {{ $n3->links("pagination::bootstrap-4") }}
         </div>
     </div>
 </div>

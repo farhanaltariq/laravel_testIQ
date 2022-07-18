@@ -24,19 +24,21 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Profile
+                Profil
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
-                    <span>User Setting</span>
+                    <span>Pengaturan profil</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{ route('user.index') }}">Profile</a>
-                        <a class="collapse-item" href="cards.html">Privacy</a>
+                        <a class="collapse-item" href="{{ route('user.index') }}">Profil</a>
+                        @if(Auth::user()->role == 'superuser')
+                            <a class="collapse-item" href="{{ route('user.lists') }}">Manajemen pengguna</a>
+                        @endif
                     </div>
                 </div>
             </li>
@@ -46,7 +48,7 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Calculator
+                Kalkulator
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -57,12 +59,12 @@
                 </a>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="">Test N</a>
-                        <a class="collapse-item" href="">Test A</a>
-                        <a class="collapse-item" href="">Test C</a>
-                        <a class="collapse-item" href="{{ route('test-n1') }}">Test N1</a>
-                        <a class="collapse-item" href="">Test N2</a>
-                        <a class="collapse-item" href="">Test N3</a>
+                        <a class="collapse-item" href="">Test V</a>
+                        {{-- <a class="collapse-item" href="">Test A</a>
+                        <a class="collapse-item" href="">Test C</a> --}}
+                        <a class="collapse-item" href="{{ route('test-n1') }}">Tes N1</a>
+                        <a class="collapse-item" href="">Tes N2</a>
+                        <a class="collapse-item" href="{{ route('test-n3') }}">Tes N3</a>
                     </div>
                 </div>
             </li>
@@ -78,7 +80,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('calendar') }}" >
                     <i class="fas fa-fw fa-calendar"></i>
-                    <span>Calendar</span>
+                    <span>Kalendar</span>
                 </a>
             </li>
 

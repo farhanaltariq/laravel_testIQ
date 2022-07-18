@@ -1,5 +1,5 @@
 @extends('layouts.dashboard.header')
-<div class="container-fluid">
+<div class="container-fluid" style="margin-top: 300px">
 
     <!-- 404 Error Text -->
     <div class="text-center">
