@@ -46,16 +46,19 @@
                     <!-- Title -->
                     <div class="maintitle">
                         <h3 class="section-title"><strong>ABOUT <span class="lighter">US</span></strong></h3>
-                    </div><br>
+                        <p class="lead">
+
+                        </p>
+                    </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                        <h3>Logo</h3>
                         <div class="text-left">
                             <p>
-                                Logo Company
+                                <img src="{{ asset('webSPP') }}/assets/img/icons/logo.png" width="" alt="logo">
                             </p>
                         </div>
+                        <h3>Bina Pisikologi Indonesia</h3>
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-6">

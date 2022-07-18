@@ -23,7 +23,7 @@
         <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
         <!-- Favicon -->
-        <link rel="icon" href="{{ asset('webSPP') }}/assets/img/brand/box2.png" type="image/png">
+        <link rel="icon" href="{{ asset('webSPP') }}/assets/img/icons/logo.png" type="image/png">
 
 
     </head>
@@ -48,7 +48,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <!-- Your Logo -->
-                    <a href="#hero" class="navbar-brand">Logo <span class="lighter">Company</span></a>
+                    <a href="#hero" class="navbar-brand"><img src="{{ asset('webSPP') }}/assets/img/icons/logo.png" width="40" alt="logo"></a>
                 </div>
                 <!-- Start Navigation -->
                 <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
@@ -63,7 +63,7 @@
                             <a href="#contactarea">Contact</a>
                         </li>
                         <li>
-                            <a href="login"><img src="{{ asset('webSPP') }}/assets/img/icons/png/100-log-in.png" width="30" alt="login"></a>
+                            <a href="login"><img src="{{ asset('webSPP') }}/assets/img/icons/masuk.png" width="30" alt="login"></a>
                         </li>
                     </ul>
                 </nav>
