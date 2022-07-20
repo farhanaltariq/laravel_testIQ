@@ -101,16 +101,30 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4 col-sm-6">
+                </div>
+                <div class="col-md-8 col-sm-6">
+                    <div class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
+                        <h3>Bagan Perusahaan</h3>
+                        <div class="text-center">
+                            <p>
+                                <img src="{{ asset('webSPP') }}/assets/img/main/bagan.png">
+                            </p>
+                        </div>
+                        <br>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
     </div>
 </section>
 
 <!-- Service
 		================================================== -->
-<section id="service" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/1.jpg);">
+<section id="service" class="parallax section">
     <div class="wrapsection">
-        <div class="parallax-overlay" style="background-color: #01b0d1;opacity:0.9;"></div>
+        <div class="parallax-overlay" style="background-color: #C279F1;opacity:0.9;"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -118,62 +132,33 @@
                     <div class="maintitle">
                         <h3 class="section-title"><strong>Service</strong></h3>
                         <p class="lead">
-                            Kami Disini Menyediakan Halaman Untuk Anda Berbagi Dan Bersedekah Kepada Orang Yang Membutuhkan
+
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-6 col-sm-6">
                     <div class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                        <img src="assets/img/main/g5.jpg" alt="">
-                        <h3>Berbagi Bersama</h3>
+                        <h3>Program A</h3>
                         <div class="text-left">
                             <p>
-                                Acara Berbagi Bersama Untuk berbagi makanan kepada seapa saja yang mau
+                                Diperuntukan bagi siswa SMP dan MTs kelas VII dan VIII dalam pengenalan diri terhadap kondisi psikologis terpenting yaitu inteligensi (potensial umum) atau bakat (potensial khusus) dan pola kerja siswa-siswa.
                             </p>
-
+                            <button type="button" class="btn btn-info btn-md"><a href="#">Selengkapnya</a></button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-6 col-sm-6">
                     <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                        <span class="glyphicon glyphicon-stats"></span>
-                        <h3>5.386 Participants</h3>
-                        <p>
-                            Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.
-                        </p>
-                        <button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button>
+                        <h3>Program B</h3>
+                        <div class="text-left">
+                            <p>
+                                Bagi siswa SMP dan MTs kelas IX yang akan melanjutkan ke jenjang studi berikutnya. Maka diberrikan tes psikologi untuk memprediksi kelanjutan studi dan jurusan yang mungkin sebaiknya diambil di sekolah lanjutan itu.
+                            </p>
+                            <button type="button" class="btn btn-info btn-md"><a href="#">Selengkapnya</a></button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s">
-                        <span class="glyphicon glyphicon-tree-deciduous"></span>
-                        <h3>195 Concerts</h3>
-                        <p>
-                            Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.
-                        </p>
-                        <button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <h3>268 Sponsors</h3>
-                        <p>
-                            Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.
-                        </p>
-                        <button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.4s">
-                        <span class="glyphicon glyphicon-usd"></span>
-                        <h3>$5.647 Donated</h3>
-                        <p>
-                            Nullam posuere, libero id interdum hendrerit, tortor nisl consectetur elit.
-                        </p>
-                        <button type="button" class="btn btn-info btn-md"><a href="#">Learn More</a></button>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
@@ -188,22 +173,41 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="maintitle">
-                        <h3 class="section-title">Kritik & Saran</h3>
+                        <h3 class="section-title">Contact</h3>
                         <p class="lead">
-                            Jika Ada Saran Dan Pertanyaan Silakan Tulis Pada Form Di Bawah
+
                         </p>
                     </div>
-                    <form id="contact" name="contact" method="post" class="text-left">
-                        <fieldset>
-                            <div class="wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:15px;">
-                                <label for="message">Pesan<span class="required">*</span></label>
-                                <textarea name="message" id="message" required></textarea>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
+                            <h3>Contact Person</h3>
+                            <div class="text-left">
+                                <p><img src="{{ asset('webSPP') }}/assets/img/icons/wa_logo.png" width="20" alt="wa">+62 813 2820 8075</p>
+                                <p><img src="{{ asset('webSPP') }}/assets/img/icons/wa_logo.png" width="20">+62 812 1561 037</p>
                             </div>
-                            <div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
-                                <input id="submit" type="submit" name="submit" value="Kirim" />
-                            </div>
-                        </fieldset>
-                    </form>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-6">
+                        <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
+                            <h3>kirim Pertanyaan Langsung</h3>
+                            <form id="contact" name="contact" method="post" class="text-left">
+                                <fieldset>
+                                    <div class="wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:15px;">
+                                        <label for="email">Email<span class="required">*</span></label>
+                                        <input name="email" id="email" required></input>
+                                    </div>
+
+                                    <div class="wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:15px;">
+                                        <label for="message">Pesan<span class="required">*</span></label>
+                                        <textarea name="message" id="message" required></textarea>
+                                    </div>
+                                    <div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
+                                        <input class="btn-info" id="submit" type="submit" name="submit" value="Kirim" />
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
                     <div id="success">
                         <p class="contactalert">
                             Pesan Anda Berhasil Di Kirim
