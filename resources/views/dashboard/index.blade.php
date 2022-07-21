@@ -87,7 +87,7 @@
             </div>
 
             <div class="col-xl-3 col-md-6 mb-4">
-                <a href="">
+                <a href="{{ route('test-n3') }}">
                     <div class="card border-left-warning shadow h-100 py-2">
                         <div class="card-body">
                             <div class="row no-gutters align-items-center">

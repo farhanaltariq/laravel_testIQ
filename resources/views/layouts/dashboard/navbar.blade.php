@@ -14,21 +14,21 @@
                         </div>
 
                     <script type="text/javascript">
-                    function showTime() {
-                        var date = new Date(),
-                            utc = new Date(Date.UTC(
-                            date.getFullYear(),
-                            date.getMonth(),
-                            date.getDate(),
-                            date.getHours()+5,
-                            date.getMinutes(),
-                            date.getSeconds()
-                            ));
+                        function showTime() {
+                            var date = new Date(),
+                                utc = new Date(Date.UTC(
+                                date.getFullYear(),
+                                date.getMonth(),
+                                date.getDate(),
+                                date.getHours()+17,
+                                date.getMinutes(),
+                                date.getSeconds()
+                                ));
 
-                        document.getElementById('time').innerHTML = utc.toLocaleTimeString();
-                    }
+                            document.getElementById('time').innerHTML = utc.toLocaleTimeString();
+                        }
 
-                    setInterval(showTime, 1000);
+                        setInterval(showTime, 1000);
                     </script>
                     </div>
                     <!-- Topbar Navbar -->

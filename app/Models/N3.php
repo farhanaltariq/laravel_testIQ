@@ -10,8 +10,11 @@ class N3 extends Model
     use HasFactory;
     protected $table = 'N3';
     protected $fillable = [
+        'created_at',
         'nama',
         'tgl_lahir',
+        'ruang_kelas',
+        'pil_jurusan',
         'jenis_kelamin',
         'alamat',
         'ans1',
