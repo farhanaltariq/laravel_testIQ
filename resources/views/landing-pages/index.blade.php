@@ -23,8 +23,8 @@
             <div class="col-md-9">
                 <div class="herotext">
                     <p class="lead wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s">
-                    <h2>BINA PISIKOLOGI <br> INDONESIA</h2>
-                    <span class="lighter">Lembaga Pisikologi dan Jasa Pisikologi</span>
+                    <h2>BINA PSIKOLOGI <br> INDONESIA</h2>
+                    <span class="lighter">Lembaga Psikologi dan Jasa Psikologi</span>
                     </p>
 
                     <p>
@@ -54,12 +54,12 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                        <div class="text-left">
+                        <div class="text-center">
                             <p>
-                                <img src="{{ asset('webSPP') }}/assets/img/icons/logo.png" width="" alt="logo">
+                                <img src="{{ asset('webSPP') }}/assets/img/icons/logo.png" width="200px" alt="logo">
                             </p>
                         </div>
-                        <h3>Bina Pisikologi Indonesia</h3>
+                        <h3>Bina Psikologi Indonesia</h3>
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-6">
@@ -182,17 +182,21 @@
                         <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
                             <h3>Contact Person</h3>
                             <div class="text-left">
-                                <p><img src="{{ asset('webSPP') }}/assets/img/icons/wa_logo.png" width="20" alt="wa">+62 813 2820 8075</p>
-                                <p><img src="{{ asset('webSPP') }}/assets/img/icons/wa_logo.png" width="20">+62 812 1561 037</p>
+                                <a href="https://api.whatsapp.com/send?phone= +62 813 2820 8075 &text=Hai, Saya tertarik dengan layanan Anda." target="_blank">
+                                    <i class="fab fa-whatsapp"> &nbsp; +62 813 2820 8075</i>
+                                </a><br>
+                                <a href="https://api.whatsapp.com/send?phone= +62 812 1561 037 &text=Hai, Saya tertarik dengan layanan Anda." target="_blank">
+                                    <i class="fab fa-whatsapp"> &nbsp; +62 812 1561 037</i>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-8 col-sm-6">
-                        <div class="service-box wow flipInY border-1" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                            <h3>kirim Pertanyaan Langsung</h3>
+                        <div class="contact-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
+                            <h3>Kirim Pertanyaan Langsung</h3>
                             <form id="contact" name="contact" method="post" class="text-left">
                                 <fieldset>
-                                    <div class="wow fadeIn animated border-1" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:15px;">
+                                    <div class="wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:15px;">
                                         <label for="email">Email<span class="required">*</span></label>
                                         <input name="email" id="email" required></input>
                                     </div>

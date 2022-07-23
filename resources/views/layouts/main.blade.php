@@ -24,6 +24,7 @@
 
         <!-- Favicon -->
         <link rel="icon" href="{{ asset('webSPP') }}/assets/img/icons/logo.png" type="image/png">
+        <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
 
 
     </head>
@@ -48,7 +49,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <!-- Your Logo -->
-                    <a href="#hero" class="navbar-brand"><img src="{{ asset('webSPP') }}/assets/img/icons/logo.png" width="40" alt="logo"></a>
+                    <a href="#hero" class="navbar-brand"><img src="{{ asset('webSPP') }}/assets/img/icons/logo.png" alt="logo"></a>
                 </div>
                 <!-- Start Navigation -->
                 <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
@@ -63,7 +64,7 @@
                             <a href="#contactarea">Contact</a>
                         </li>
                         <li>
-                            <a href="login"><img src="{{ asset('webSPP') }}/assets/img/icons/masuk.png" width="30" alt="login"></a>
+                            <a href="login"><img src="{{ asset('webSPP') }}/assets/img/icons/login.png" width="30" alt="login"></a>
                         </li>
                     </ul>
                 </nav>
@@ -80,7 +81,7 @@
                 <a href="#"><i class="fa fa-twitter"></i></a>
                 <a href="#"><i class="fa fa-google-plus"></i></a>
             </span><br />
-            Copyright &copy;<a href="#">2022 Bina Pisikologi Indonesia</a>
+            Copyright &copy;<a href="#">2022 Bina Psikologi Indonesia</a>
         </section>
         <!-- Bootstrap core JavaScript
 		================================================== -->
