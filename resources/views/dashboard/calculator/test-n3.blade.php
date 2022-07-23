@@ -74,7 +74,7 @@
                         @endphp
                     <tr>
                         <td>{{ $item->nama }}</td>
-                        <td>{{ $nilai }}</td>
+                        <td>{{ $nilai }} dari {{ count($answer)-1 }}</td>
                         <td>{{ $item->created_at }}</td>
                         <td>
                             <a href="{{ route('test-n3.show', $item->id) }}">Detail</a>

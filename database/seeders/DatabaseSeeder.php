@@ -19,6 +19,9 @@ class DatabaseSeeder extends Seeder
 
         if(\App\Models\Key_N1::count() == 0)
             $this->call(Key_N1Seeder::class);
+        
+        if(\App\Models\Key_N2::count() == 0)
+            $this->call(Key_N2Seeder::class);
 
         if(\App\Models\Key_N3::count() == 0)
             $this->call(Key_N3Seeder::class);

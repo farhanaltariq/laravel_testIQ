@@ -13,6 +13,10 @@ use App\Imports\N1Import;
 use App\Models\N1;
 use App\Models\Key_N1;
 
+use App\Imports\N2Import;
+use App\Models\N2;
+use App\Models\Key_N2;
+
 use App\Imports\N3Import;
 use App\Models\N3;
 use App\Models\Key_N3;
@@ -61,14 +65,14 @@ class CalculatorController extends Controller
             Excel::import(new VImport, $request->file('file'));
             return redirect()->route('test-v')->with('success', 'Data imported successfully.');
         } catch (\Exception $e){
-            return redirect()->route('test-v')->with('error', $e->getMessage());
+            return redirect()->route('test-v')->with('error', 'invalid answer format');
         }
     }
     public function store_v(Request $request){
         try{
             v::create($request->all());
         } catch (\Exception $e){
-            return redirect()->back()->withInput()->with('error', $e->getMessage());
+            return redirect()->back()->withInput()->with('error', 'invalid answer format');
         }
     }
     public function show_v($id){
@@ -134,7 +138,7 @@ class CalculatorController extends Controller
         try{
             N1::create($request->all());
         } catch (\Exception $e){
-            return redirect()->back()->withInput()->with('error', $e->getMessage());
+            return redirect()->back()->withInput()->with('error', 'invalid answer format');
         }
     }
     public function show_n1($id){
@@ -154,6 +158,70 @@ class CalculatorController extends Controller
         $n1 = N1::find($id);
         $n1->delete();
         return redirect()->route('test-n1')->with('success', 'Data deleted successfully.');
+    }
+
+     // N2
+    public function test_n2(Request $request)
+    {
+        if($request->search)
+            $n2 = N2::where('nama', 'like', '%'.$request->search.'%')->orWhere('created_at', 'like', '%'.$request->search.'%')->orderBy('id', 'desc')->paginate(15);
+        else
+            $n2 = N2::orderBy('id', 'desc')->paginate(15);
+        $keys = Key_N2::all();
+        $answer[0] = '';
+        foreach($keys as $key){
+            $answer[] = $key->answer;
+        }
+        return view('dashboard.calculator.test-n2', compact('n2', 'answer'));
+    }
+    public function key_n2(){
+        $keys = Key_N2::all();
+        $answer[0] = '';
+        foreach($keys as $key){
+            $answer[] = $key->answer;
+        }
+        return view('dashboard.keys.n2', compact('answer'));
+    }
+
+    public function create_n2(){
+        return view('dashboard.calculator.test-n2-create');
+    }
+    public function ans_n2(Request $request){
+        // validate file
+        try{
+            $this->validate($request, [
+                'file' => 'required|mimes:xls,xlsx'
+            ]);
+            Excel::import(new N2Import, $request->file('file'));
+            return redirect()->route('test-n2')->with('success', 'Data imported successfully.');
+        } catch (\Exception $e){
+            return redirect()->route('test-n2')->with('error', $e->getMessage());
+        }
+    }
+    public function store_n2(Request $request){
+        try{
+            N2::create($request->all());
+        } catch (\Exception $e){
+            return redirect()->back()->withInput()->with('error', 'invalid answer format');
+        }
+    }
+    public function show_n2($id){
+        $n2 = N2::find($id);
+        $keys = Key_N2::all();
+        $answer[0] = '';
+        foreach($keys as $key){
+            $answer[] = $key->answer;
+        }
+        return view('dashboard.calculator.test-n2-show', compact('n2', 'answer'));
+    }
+    public function update_n2(Request $request, $id){
+        N2::find($id)->update($request->all());
+        return redirect()->route('test-n2', $id)->with('success', 'Data updated successfully.');
+    }
+    public function destroy_n2($id){
+        $n2 = N2::find($id);
+        $n2->delete();
+        return redirect()->route('test-n2')->with('success', 'Data deleted successfully.');
     }
 
     // N3
@@ -187,7 +255,7 @@ class CalculatorController extends Controller
             Excel::import(new N3Import, $request->file('file'));
             return redirect()->route('test-n3')->with('success', 'Data imported successfully.');
         } catch (\Exception $e){
-            return redirect()->route('test-n3')->with('error', $e->getMessage());
+            return redirect()->route('test-n3')->with('error', 'invalid answer format');
         }
     }
     public function show_n3($id){

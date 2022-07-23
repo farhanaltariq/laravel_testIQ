@@ -80,7 +80,7 @@
                         @endphp
                     <tr>
                         <td>{{ $item->nama }}</td>
-                        <td>{{ $nilai }} dari 25</td>
+                        <td>{{ $nilai }} dari {{ count($answer)-1 }}</td>
                         <td>{{ $item->created_at }}</td>
                         <td>
                             <a href="{{ route('test-n1.show', $item->id) }}">Detail</a>

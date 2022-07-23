@@ -44,6 +44,11 @@ Route::middleware(['auth', 'active'])->group(function () {
     Route::put('/test-n1/{id}', [App\Http\Controllers\CalculatorController::class, 'update_n1'])->name('test-n1.update');
     Route::delete('/test-n1/{id}', [App\Http\Controllers\CalculatorController::class, 'destroy_n1'])->name('test-n1.destroy');
     
+    Route::get('/key-n2', [App\Http\Controllers\CalculatorController::class, 'key_n2'])->name('key-n2');
+    Route::get('/test-n2', [App\Http\Controllers\CalculatorController::class, 'test_n2'])->name('test-n2');
+    Route::post('/test-n2', [App\Http\Controllers\CalculatorController::class, 'ans_n2'])->name('test-n2.ans');
+    Route::get('/test-n2/{id}', [App\Http\Controllers\CalculatorController::class, 'show_n2'])->name('test-n2.show');
+
     Route::get('/key-n3', [App\Http\Controllers\CalculatorController::class, 'key_n3'])->name('key-n3');
     Route::get('/test-n3', [App\Http\Controllers\CalculatorController::class, 'test_n3'])->name('test-n3');
     Route::post('/test-n3', [App\Http\Controllers\CalculatorController::class, 'ans_n3'])->name('test-n3.ans');

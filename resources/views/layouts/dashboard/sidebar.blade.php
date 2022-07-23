@@ -61,7 +61,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="{{ route('test-v') }}">Test V</a>
                         <a class="collapse-item" href="{{ route('test-n1') }}">Tes N1</a>
-                        <a class="collapse-item" href="">Tes N2</a>
+                        <a class="collapse-item" href="{{ route('test-n2') }}">Tes N2</a>
                         <a class="collapse-item" href="{{ route('test-n3') }}">Tes N3</a>
                     </div>
                 </div>
@@ -69,14 +69,14 @@
             
             <li class="nav-item">
                 <a class="nav-link collapsed" id="col3" href="#" data-toggle="collapse" data-target="#keys" aria-expanded="true" aria-controls="keys">
-                    <i class="fas fa-calculator"></i>
+                    <i class="fas fa-book"></i>
                     <span>Kunci Jawaban</span>
                 </a>
                 <div id="keys" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="{{ route('key-v') }}">Test V</a>
                         <a class="collapse-item" href="{{ route('key-n1') }}">Tes N1</a>
-                        <a class="collapse-item" href="">Tes N2</a>
+                        <a class="collapse-item" href="{{ route('key-n2') }}">Tes N2</a>
                         <a class="collapse-item" href="{{ route('key-n3') }}">Tes N3</a>
                     </div>
                 </div>

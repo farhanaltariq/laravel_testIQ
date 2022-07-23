@@ -30,7 +30,7 @@
 </div>
 <div class="container-fluid card border-left-info shadow h-80 mb-3">
     <div class="card-header text-center"><h4>Daftar Nilai Tes V</h4></div>
-    <form class="form-inline" action="{{ route('test-n1') }}">
+    <form class="form-inline" action="{{ route('test-v') }}">
         <label class="sr-only" for="inlineFormInputName2">Name</label>
         <input name="search" type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Cari nama atau tanggal ...">
         <button type="submit" class="btn btn-primary mb-2">
