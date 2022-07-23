@@ -27,7 +27,10 @@ Route::middleware(['auth', 'active'])->group(function () {
     // tambahin route baru didalam sini kalo perlu login
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/calendar', [App\Http\Controllers\FullCalendarController::class, 'index'])->name('calendar');
+
     Route::get('/test-n1', [App\Http\Controllers\CalculatorController::class, 'test_n1'])->name('test-n1');
+    Route::get('/test-n1-create', [App\Http\Controllers\CalculatorController::class, 'create_n1'])->name('test-n1.create');
+    Route::post('/test-n1-store', [App\Http\Controllers\CalculatorController::class, 'store_n1'])->name('test-n1.store');
     Route::post('/test-n1', [App\Http\Controllers\CalculatorController::class, 'ans_n1'])->name('test-n1.ans');
     Route::get('/test-n1/{id}', [App\Http\Controllers\CalculatorController::class, 'show_n1'])->name('test-n1.show');
     Route::put('/test-n1/{id}', [App\Http\Controllers\CalculatorController::class, 'update_n1'])->name('test-n1.update');

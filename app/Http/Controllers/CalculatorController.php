@@ -23,15 +23,19 @@ class CalculatorController extends Controller
     public function test_n1(Request $request)
     {
         if($request->search)
-            $n1 = N1::where('nama', 'like', '%'.$request->search.'%')->orderBy('id', 'desc')->paginate(5);
+            $n1 = N1::where('nama', 'like', '%'.$request->search.'%')->orWhere('created_at', 'like', '%'.$request->search.'%')->orderBy('id', 'desc')->paginate(15);
         else
-            $n1 = N1::orderBy('id', 'desc')->paginate(5);
+            $n1 = N1::orderBy('id', 'desc')->paginate(15);
         $keys = Key_N1::all();
         $answer[0] = '';
         foreach($keys as $key){
             $answer[] = $key->answer;
         }
         return view('dashboard.calculator.test-n1', compact('n1', 'answer'));
+    }
+
+    public function create_n1(){
+        return view('dashboard.calculator.test-n1-create');
     }
     public function ans_n1(Request $request){
         // validate file
@@ -43,6 +47,13 @@ class CalculatorController extends Controller
             return redirect()->route('test-n1')->with('success', 'Data imported successfully.');
         } catch (\Exception $e){
             return redirect()->route('test-n1')->with('error', 'Invalid answer format.');
+        }
+    }
+    public function store_n1(Request $request){
+        try{
+            N1::create($request->all());
+        } catch (\Exception $e){
+            return redirect()->back()->withInput()->with('error', $e->getMessage());
         }
     }
     public function show_n1($id){
@@ -68,9 +79,9 @@ class CalculatorController extends Controller
     public function test_n3(Request $request)
     {
         if($request->search)
-            $n3 = N3::where('nama', 'like', '%'.$request->search.'%')->orderBy('id', 'desc')->paginate(5);
+            $n3 = N3::where('nama', 'like', '%'.$request->search.'%')->orWhere('created_at', 'like', '%'.$request->search.'%')->orderBy('id', 'desc')->paginate(15);
         else
-            $n3 = N3::orderBy('id', 'desc')->paginate(5);
+            $n3 = N3::orderBy('id', 'desc')->paginate(15);
         $keys = Key_N3::all();
         $answer[0] = '';
         foreach($keys as $key){

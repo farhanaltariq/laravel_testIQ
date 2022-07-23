@@ -10,10 +10,11 @@ class N1 extends Model
     use HasFactory;
     protected $table = 'N1';
     protected $fillable = [
+        'created_at',
         'nama',
         'tgl_lahir',
-        'jenis_kelamin',
-        'alamat',
+        'ruang_kelas',
+        'pil_jurusan',
         'ans1',
         'ans2',
         'ans3',
