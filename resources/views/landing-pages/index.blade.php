@@ -151,7 +151,6 @@
                                 Selengkapnya
                             </button>
 
-
                             <!-- Modal -->
                             <div class="modal fade" id="programa" data-backdrop="" data-keyboard="false" tabindex="-1" aria-labelledby="programaLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
@@ -161,6 +160,9 @@
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
                                         </div>
                                         <div class="modal-body">
                                             <h3 class="text-center">PROGRAM A</h3>
@@ -186,9 +188,6 @@
                                                 </tr>
                                             </table>
                                             <b class="text-left">Biaya program A : Rp.17.000/orang</b>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
@@ -218,6 +217,9 @@
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
                                         </div>
                                         <div class="modal-body">
                                             <h3 class="text-center">PROGRAM B</h3>
@@ -250,9 +252,6 @@
                                             </table>
                                             <b class="text-left">Biaya program B : Rp.20.000/orang</b>
                                         </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -282,6 +281,9 @@
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+                                        </div>
                                         <div class="modal-body">
                                             <h3 class="text-center">PROGRAM C</h3>
                                             <p>Bagi siswa SMA dan MA (Madrasah Aliyah) kelas X yang akan mengikuti jurusan yang tersedia di SMA dan MA, maka diberikan tes psikologi untuk memprediksi kesuksesan studi pada jurusan yang mungkin sebaiknya diambil. Untuk kepentingan ini, maka akan diketahui aspek-aspek berikut ini:
@@ -304,9 +306,6 @@
                                                 </tr>
                                             </table>
                                             <b class="text-left">Biaya program C : Rp.15.000/orang</b>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
@@ -336,6 +335,9 @@
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
                                         </div>
                                         <div class="modal-body">
                                             <h3 class="text-center">PROGRAM D</h3>
@@ -449,11 +451,9 @@
                                                         <td>Kegiatan pekerjaan dalam bidang kesehatan dan perawatan. </td>
                                                     </tr>
                                                 </tbody>
+
                                             </table>
                                             <b class="text-left">Biaya program D : Rp.20.000/orang</b>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
