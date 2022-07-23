@@ -4,6 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
+
+use App\Imports\VImport;
+use App\Models\V;
+use App\Models\Key_V;
+
 use App\Imports\N1Import;
 use App\Models\N1;
 use App\Models\Key_N1;
@@ -19,6 +24,66 @@ class CalculatorController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    // V
+    public function test_v(Request $request)
+    {
+        if($request->search)
+            $v = V::where('nama', 'like', '%'.$request->search.'%')->orWhere('created_at', 'like', '%'.$request->search.'%')->orderBy('id', 'desc')->paginate(15);
+        else
+            $v = V::orderBy('id', 'desc')->paginate(15);
+        $keys = Key_V::all();
+        $answer[0] = '';
+        $type[0] = '';
+        foreach($keys as $key){
+            $answer[] = $key->answer;
+            $type[] = $key->type;
+        }
+        return view('dashboard.calculator.test-v', compact('v', 'answer', 'type'));
+    }
+
+    public function create_v(){
+        return view('dashboard.calculator.test-v-create');
+    }
+    public function ans_v(Request $request){
+        // validate file
+        try{
+            $this->validate($request, [
+                'file' => 'required|mimes:xls,xlsx'
+            ]);
+            Excel::import(new VImport, $request->file('file'));
+            return redirect()->route('test-v')->with('success', 'Data imported successfully.');
+        } catch (\Exception $e){
+            return redirect()->route('test-v')->with('error', $e->getMessage());
+        }
+    }
+    public function store_v(Request $request){
+        try{
+            v::create($request->all());
+        } catch (\Exception $e){
+            return redirect()->back()->withInput()->with('error', $e->getMessage());
+        }
+    }
+    public function show_v($id){
+        $v = v::find($id);
+        $keys = Key_v::all();
+        $answer[0] = '';
+        $type[0] = '';
+        foreach($keys as $key){
+            $answer[] = $key->answer;
+            $type[] = $key->type;
+        }
+        return view('dashboard.calculator.test-v-show', compact('v', 'answer', 'type'));
+    }
+    public function update_v(Request $request, $id){
+        v::find($id)->update($request->all());
+        return redirect()->route('test-v', $id)->with('success', 'Data updated successfully.');
+    }
+    public function destroy_v($id){
+        $v = v::find($id);
+        $v->delete();
+        return redirect()->route('test-v')->with('success', 'Data deleted successfully.');
+    }
+    
     // N1
     public function test_n1(Request $request)
     {

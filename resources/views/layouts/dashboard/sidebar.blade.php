@@ -59,9 +59,7 @@
                 </a>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="">Test V</a>
-                        {{-- <a class="collapse-item" href="">Test A</a>
-                        <a class="collapse-item" href="">Test C</a> --}}
+                        <a class="collapse-item" href="{{ route('test-v') }}">Test V</a>
                         <a class="collapse-item" href="{{ route('test-n1') }}">Tes N1</a>
                         <a class="collapse-item" href="">Tes N2</a>
                         <a class="collapse-item" href="{{ route('test-n3') }}">Tes N3</a>

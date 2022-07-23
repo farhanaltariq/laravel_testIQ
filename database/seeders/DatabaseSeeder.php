@@ -14,6 +14,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+        if(\App\Models\Key_V::count() == 0)
+            $this->call(Key_VSeeder::class);
+
         if(\App\Models\Key_N1::count() == 0)
             $this->call(Key_N1Seeder::class);
 

@@ -28,6 +28,12 @@ Route::middleware(['auth', 'active'])->group(function () {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/calendar', [App\Http\Controllers\FullCalendarController::class, 'index'])->name('calendar');
 
+    Route::get('/test-v', [App\Http\Controllers\CalculatorController::class, 'test_v'])->name('test-v');
+    Route::post('/test-v', [App\Http\Controllers\CalculatorController::class, 'ans_v'])->name('test-v.ans');
+    Route::get('/test-v/{id}', [App\Http\Controllers\CalculatorController::class, 'show_v'])->name('test-v.show');
+    Route::put('/test-v/{id}', [App\Http\Controllers\CalculatorController::class, 'update_v'])->name('test-v.update');
+    Route::delete('/test-v/{id}', [App\Http\Controllers\CalculatorController::class, 'destroy_v'])->name('test-v.destroy');
+
     Route::get('/test-n1', [App\Http\Controllers\CalculatorController::class, 'test_n1'])->name('test-n1');
     Route::get('/test-n1-create', [App\Http\Controllers\CalculatorController::class, 'create_n1'])->name('test-n1.create');
     Route::post('/test-n1-store', [App\Http\Controllers\CalculatorController::class, 'store_n1'])->name('test-n1.store');
