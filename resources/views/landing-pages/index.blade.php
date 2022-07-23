@@ -188,18 +188,18 @@
                         </div>
                     </div>
                     <div class="col-md-8 col-sm-6">
-                        <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
+                        <div class="service-box wow flipInY border-1" data-wow-duration="1.5s" data-wow-delay="0.1s">
                             <h3>kirim Pertanyaan Langsung</h3>
                             <form id="contact" name="contact" method="post" class="text-left">
                                 <fieldset>
-                                    <div class="wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:15px;">
+                                    <div class="wow fadeIn animated border-1" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:15px;">
                                         <label for="email">Email<span class="required">*</span></label>
                                         <input name="email" id="email" required></input>
                                     </div>
 
                                     <div class="wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:15px;">
                                         <label for="message">Pesan<span class="required">*</span></label>
-                                        <textarea name="message" id="message" required></textarea>
+                                        <textarea name="message" id="message" required class="border-1px"></textarea>
                                     </div>
                                     <div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
                                         <input class="btn-info" id="submit" type="submit" name="submit" value="Kirim" />
