@@ -24,7 +24,6 @@
 
         <!-- Favicon -->
         <link rel="icon" href="{{ asset('webSPP') }}/assets/img/icons/logo.png" type="image/png">
-        <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
 
 
     </head>
@@ -79,7 +78,7 @@
             <span class="social wow zoomIn">
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-google"></i></a>
             </span><br />
             Copyright &copy;<a href="#">2022 Bina Psikologi Indonesia</a>
         </section>
