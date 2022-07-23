@@ -67,15 +67,16 @@
                         <h3>VISI</h3>
                         <div class="text-center">
                             <p>
-                                Memiliki manfaat dan kemampuan yang optimal untuk membantu dalam mengatasi berbagai persoalan pisikologi baik pada tingkat individual, institusial atau kemasyarakatan
+                                Memiliki manfaat dan kemampuan yang optimal untuk membantu dalam
+                                mengatasi berbagai persoalan psikologi baik pada tingkat individual, institusional atau kemasyarakatan
                             </p>
                         </div>
                         <br>
                         <h3>MISI</h3>
                         <div class="text-center">
                             <p>
-                                Menerapkan hasil-hasil kajian dan penelitian dalam berbagai keheidupan manusia. Sosialisasi dan pemanfaatan ilmu psikologi. Pelayanan psikologi bagi perorangan, masyarakat dan lembagai
-                                yang membutuhkan
+                                Menerapkan hasil-hasil kajian dan penelitian dalam berbagai kehidupan manusia. Sosialisasi dan pemanfaatan ilmu psikologi.
+                                Pelayanan psikologi bagi perorangan, masyarakat dan lembaga yang membutuhkan
                             </p>
                         </div>
                         <br>
@@ -83,7 +84,7 @@
                         <div class="text-left">
                             <p>
                                 1. Menyelenggarakan sosialisasi pemanfaatan psikologi dalam berbagai bidang kehidupan manusia <br>
-                                2. Menyelenggarakan pelatihan dalam meningkatan ketrampilan mengahadipi berbagai masalah psikologi bagi perorangan <br>
+                                2. Menyelenggarakan pelatihan dalam meningkatan keterampilan menghadapi berbagai masalah psikologi bagi perorangan <br>
                                 3. Menyelenggarakan layanan konsultasi psikologi bagi perorangan, masyarakat dan kelembagaan <br>
                                 4. Menyelenggarakan layanan diagnosis/asesmen/tes psikologi bagi perorangan, masyarakat dan Lembaga/sekolah <br>
                                 5. Menyelenggarakan penerbitan buku-buku psikologi <br>
@@ -93,9 +94,9 @@
                         <h3>PENGALAMAN</h3>
                         <div class="text-left">
                             <p>
-                                1.Telah memberikan pelayanan/konsultasi psikologi terhadap berbagi perusahaan, untuk seleksi dan penempatan karyawan. <br>
-                                2.Konsultasi perorangan dalam bidang pendidikan dan kesehatan mental. <br>
-                                3.Melayani berbagai konsultasi/tes psikologi terhadap sekolah-sekolah khusus. <br>
+                                1. Telah memberikan pelayanan/konsultasi psikologi terhadap berbagi perusahaan, untuk seleksi dan penempatan karyawan. <br>
+                                2. Konsultansi perorangan dalam bidang pendidikan dan kesehatan mental. <br>
+                                3. Melayani berbagai konsultasi/tes psikologi terhadap sekolah-sekolah khusus. <br>
                                 4. Melayani konsultasi psikologi/tes psikologi dalam penjurusan untuk berbagai sekolah di Jawa dan luar jawa. <br>
                             </p>
                         </div>
@@ -141,9 +142,58 @@
                         <h3>Program A</h3>
                         <div class="text-left">
                             <p>
-                                Diperuntukan bagi siswa SMP dan MTs kelas VII dan VIII dalam pengenalan diri terhadap kondisi psikologis terpenting yaitu inteligensi (potensial umum) atau bakat (potensial khusus) dan pola kerja siswa-siswa.
+                                Diperuntukan bagi siswa SMP dan MTs kelas VII dan VIII dalam pengenalan diri terhadap kondisi psikologis
+                                terpenting yaitu intelegensi (potensial umum) atau bakat (potensial khusus) dan pola kerja siswa-siswa.
+
                             </p>
-                            <button type="button" class="btn btn-info btn-md"><a href="#">Selengkapnya</a></button>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#programa">
+                                Selengkapnya
+                            </button>
+
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="programa" data-backdrop="" data-keyboard="false" tabindex="-1" aria-labelledby="programaLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="programaLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3 class="text-center">PROGRAM A</h3>
+                                            <p>Bagi siswa SMP dan MTS (Madrasah Tsanawiyah) kelas VII yang sedang mengikuti proses pendidikan di SMP/MTS.
+                                                Diberikan tes psikologi untuk memberi gambaran secara lebih akurat tentang belajar dan prestasi di SMP/MTS.
+                                                Aspek-aspek psikologis yang diukur adalah sebagai berikut:</p>
+                                            <table>
+                                                <tr>
+                                                    <ol type="1">
+                                                        <li> <b>Inteligensi Umum</b>: kecerdasan dan kemampuan berfikir, dalam semua macam bidang kegiatan.
+                                                            Tidak terkait dengan bidang tertetu. Tingginya keceradasan seseorang,
+                                                            akan menunjukkan kemungkinan sukses dalam pendidikan di SLTA dan kelanjutan studi.</li>
+                                                        <li><b>Kemampuan Verbal</b> : kecerdasan dan kemampuan berfikir yang terikat oleh bahasa. Ini mencakup berbagai kemampuan yang didominasi oleh unsur bahasa.</li>
+                                                        <li><b>Kemampuan Non Verbal</b>: kecerdasan dan kemampuan berfikir yang tidak terikat oleh bahasa.
+                                                            Mencakup semua kemampuan yang tidak ada atau sedikit unsur bahasanya, seperti menggambar dan memahami bentuk.</li>
+                                                        <li><b>Abstract Reasoning</b> : kemampuan berfikir abstrak dan logika non verbal.</li>
+                                                        <li><b>Kemampuan Bahasa</b> : kemampuan dasar dan penguasaan atas konsep bahasa.</li>
+                                                        <li><b>Pengetahuan</b> : kemampuan dasar dalam menyerap konsep dan pengetahuan umum.</li>
+                                                        <li><b>Kecepatan Kerja</b>, tipe kerja yang menyangkut kecepatan dan kegesitan dalam mengerjakan sesuatu.</li>
+                                                        <li><b>Ketelitian Kerja</b>, tipe kerja yang menyangkut kecermatan dalam melakukan setiap pekerjaan.</li>
+
+                                                    </ol>
+                                                </tr>
+                                            </table>
+                                            <b class="text-left">Biaya program A : Rp.17.000/orang</b>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -152,13 +202,188 @@
                         <h3>Program B</h3>
                         <div class="text-left">
                             <p>
-                                Bagi siswa SMP dan MTs kelas IX yang akan melanjutkan ke jenjang studi berikutnya. Maka diberrikan tes psikologi untuk memprediksi kelanjutan studi dan jurusan yang mungkin sebaiknya diambil di sekolah lanjutan itu.
+                                Bagi siswa SMP dan MTs kelas IX yang akan melanjutkan ke jenjang studi berikutnya. Maka diberikan tes psikologi
+                                untuk memprediksi kelanjutan studi dan jurusan yang mungkin sebaiknya diambil di sekolah lanjutan itu.
                             </p>
-                            <button type="button" class="btn btn-info btn-md"><a href="#">Selengkapnya</a></button>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#programb">
+                                Selengkapnya
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="programb" data-backdrop="" data-keyboard="false" tabindex="-1" aria-labelledby="programbLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="programbLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3 class="text-center">PROGRAM B</h3>
+                                            <p>Bagi siswa SMP dan MTS (Madrasah Tsanawiyah) kelas IX yang akan mengikuti jurusan yang tersedia di SMA dan MA, atau ke SMK maka diberrikan tes psikologi untuk memprediksi kesuksesan studi pada jurusan yang mungkin sebaiknya diambil. Untuk kepentingan ini, maka akan diketahui aspek-aspek berikut ini:
+                                                INTELIGENSI</p>
+                                            <table>
+                                                <tr>
+                                                    <ol type="1">
+                                                        <li><b>Inteligensi Umum</b> : kecerdasan dan kemampuan berfikir, dalam semua macam bidang kegiatan.
+                                                            Tingginya keceradasan seseorang, akan menunjukkan kemungkinan sukses dalam pendidikan di SLTA dan kelanjutan studi.</li>
+                                                        <li><b>Kemampuan Verbal</b> : kecerdasan dan kemampuan berfikir yang terikat oleh bahasa. Ini mencakup berbagai kemampuan yang
+                                                            didominasi oleh unsur bahasa.</li>
+                                                        <li><b>Kemampuan Non Verbal</b>: kecerdasan dan kemampuan berfikir yang tidak terikat oleh bahasa. Mencakup semua kemampuan
+                                                            yang tidak ada atau sedikit unsur bahasanya, seperti menggambar dan memahami bentuk.</li>
+                                                        <li><b>Numerical Ability</b> : kemampuan dasar dalam operasi hitung dan tata bilangan.</li>
+                                                        <li><b>Kemampuan Bahasa</b> : kemampuan dasar dan penguasaan atas konsep bahasa.</li>
+                                                        <li><b>Pengetahuan</b> : kemampuan dasar dalam menterap konsep dan masalah sosial.</li>
+                                                        <li><b>Abstract Reasoning</b> : kemampuann berfikir abstrak dan logika bentuk.</li>
+                                                        <li><b>Mechanical Reasoning</b>: pemahaman dasar atas konsep-konsep teknik, fisika dan mekanika.</li>
+                                                        <li><b>Pandang Ruang</b>: kemampuan dalam mempersepsi ruang.dan design (rancang bangun).
+                                                            BAKAT</li>
+                                                        <li>Kemampuan potensial (bakat) mempelajari ilmu-ilmu dalam IPA atau MIA</li>
+                                                        <li>Kemampuan potensial (bakat) mempelajari ilmu-ilmu dalam IPS atau IIS</li>
+                                                        <li>Kemampuan potensial (bakat) mempelajari ilmu-ilmu Bahasa.
+                                                            POLA AKTIVITAS</li>
+                                                        <li>Kecepatan Kerja, dan Ketelitian Kerja MINAT JURUSAN</li>
+                                                        <li>IPS atau IIS, IPA atau MIA, Bahasa</li>
+                                                    </ol>
+                                                </tr>
+                                            </table>
+                                            <b class="text-left">Biaya program B : Rp.20.000/orang</b>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
+                        <h3>Program C</h3>
+                        <div class="text-left">
+                            <p>
+                                Diperuntukan bagi siswa SMP dan MTs kelas VII dan VIII dalam pengenalan diri terhadap kondisi psikologis
+                                terpenting yaitu intelegensi (potensial umum) atau bakat (potensial khusus) dan pola kerja siswa-siswa.
 
+                            </p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#programa">
+                                Selengkapnya
+                            </button>
+
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="programa" data-backdrop="" data-keyboard="false" tabindex="-1" aria-labelledby="programaLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="programaLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3 class="text-center">PROGRAM A</h3>
+                                            <p>Bagi siswa SMP dan MTS (Madrasah Tsanawiyah) kelas VII yang sedang mengikuti proses pendidikan di SMP/MTS.
+                                                Diberikan tes psikologi untuk memberi gambaran secara lebih akurat tentang belajar dan prestasi di SMP/MTS.
+                                                Aspek-aspek psikologis yang diukur adalah sebagai berikut:</p>
+                                            <table>
+                                                <tr>
+                                                    <ol type="1">
+                                                        <li> <b>Inteligensi Umum</b>: kecerdasan dan kemampuan berfikir, dalam semua macam bidang kegiatan.
+                                                            Tidak terkait dengan bidang tertetu. Tingginya keceradasan seseorang,
+                                                            akan menunjukkan kemungkinan sukses dalam pendidikan di SLTA dan kelanjutan studi.</li>
+                                                        <li><b>Kemampuan Verbal</b> : kecerdasan dan kemampuan berfikir yang terikat oleh bahasa. Ini mencakup berbagai kemampuan yang didominasi oleh unsur bahasa.</li>
+                                                        <li><b>Kemampuan Non Verbal</b>: kecerdasan dan kemampuan berfikir yang tidak terikat oleh bahasa.
+                                                            Mencakup semua kemampuan yang tidak ada atau sedikit unsur bahasanya, seperti menggambar dan memahami bentuk.</li>
+                                                        <li><b>Abstract Reasoning</b> : kemampuan berfikir abstrak dan logika non verbal.</li>
+                                                        <li><b>Kemampuan Bahasa</b> : kemampuan dasar dan penguasaan atas konsep bahasa.</li>
+                                                        <li><b>Pengetahuan</b> : kemampuan dasar dalam menyerap konsep dan pengetahuan umum.</li>
+                                                        <li><b>Kecepatan Kerja</b>, tipe kerja yang menyangkut kecepatan dan kegesitan dalam mengerjakan sesuatu.</li>
+                                                        <li><b>Ketelitian Kerja</b>, tipe kerja yang menyangkut kecermatan dalam melakukan setiap pekerjaan.</li>
+
+                                                    </ol>
+                                                </tr>
+                                            </table>
+                                            <b class="text-left">Biaya program A : Rp.17.000/orang</b>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
+                        <h3>Program B</h3>
+                        <div class="text-left">
+                            <p>
+                                Bagi siswa SMP dan MTs kelas IX yang akan melanjutkan ke jenjang studi berikutnya. Maka diberikan tes psikologi
+                                untuk memprediksi kelanjutan studi dan jurusan yang mungkin sebaiknya diambil di sekolah lanjutan itu.
+                            </p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#programb">
+                                Selengkapnya
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="programb" data-backdrop="" data-keyboard="false" tabindex="-1" aria-labelledby="programbLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="programbLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3 class="text-center">PROGRAM B</h3>
+                                            <p>Bagi siswa SMP dan MTS (Madrasah Tsanawiyah) kelas IX yang akan mengikuti jurusan yang tersedia di SMA dan MA, atau ke SMK maka diberrikan tes psikologi untuk memprediksi kesuksesan studi pada jurusan yang mungkin sebaiknya diambil. Untuk kepentingan ini, maka akan diketahui aspek-aspek berikut ini:
+                                                INTELIGENSI</p>
+                                            <table>
+                                                <tr>
+                                                    <ol type="1">
+                                                        <li><b>Inteligensi Umum</b> : kecerdasan dan kemampuan berfikir, dalam semua macam bidang kegiatan.
+                                                            Tingginya keceradasan seseorang, akan menunjukkan kemungkinan sukses dalam pendidikan di SLTA dan kelanjutan studi.</li>
+                                                        <li><b>Kemampuan Verbal</b> : kecerdasan dan kemampuan berfikir yang terikat oleh bahasa. Ini mencakup berbagai kemampuan yang
+                                                            didominasi oleh unsur bahasa.</li>
+                                                        <li><b>Kemampuan Non Verbal</b>: kecerdasan dan kemampuan berfikir yang tidak terikat oleh bahasa. Mencakup semua kemampuan
+                                                            yang tidak ada atau sedikit unsur bahasanya, seperti menggambar dan memahami bentuk.</li>
+                                                        <li><b>Numerical Ability</b> : kemampuan dasar dalam operasi hitung dan tata bilangan.</li>
+                                                        <li><b>Kemampuan Bahasa</b> : kemampuan dasar dan penguasaan atas konsep bahasa.</li>
+                                                        <li><b>Pengetahuan</b> : kemampuan dasar dalam menterap konsep dan masalah sosial.</li>
+                                                        <li><b>Abstract Reasoning</b> : kemampuann berfikir abstrak dan logika bentuk.</li>
+                                                        <li><b>Mechanical Reasoning</b>: pemahaman dasar atas konsep-konsep teknik, fisika dan mekanika.</li>
+                                                        <li><b>Pandang Ruang</b>: kemampuan dalam mempersepsi ruang.dan design (rancang bangun).
+                                                            BAKAT</li>
+                                                        <li>Kemampuan potensial (bakat) mempelajari ilmu-ilmu dalam IPA atau MIA</li>
+                                                        <li>Kemampuan potensial (bakat) mempelajari ilmu-ilmu dalam IPS atau IIS</li>
+                                                        <li>Kemampuan potensial (bakat) mempelajari ilmu-ilmu Bahasa.
+                                                            POLA AKTIVITAS</li>
+                                                        <li>Kecepatan Kerja, dan Ketelitian Kerja MINAT JURUSAN</li>
+                                                        <li>IPS atau IIS, IPA atau MIA, Bahasa</li>
+                                                    </ol>
+                                                </tr>
+                                            </table>
+                                            <b class="text-left">Biaya program B : Rp.20.000/orang</b>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -179,14 +404,14 @@
                         </p>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
+                        <div class="contact-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
                             <h3>Contact Person</h3>
                             <div class="text-left">
                                 <a href="https://api.whatsapp.com/send?phone= +62 813 2820 8075 &text=Hai, Saya tertarik dengan layanan Anda." target="_blank">
-                                    <i class="fab fa-whatsapp"> &nbsp; +62 813 2820 8075</i>
+                                    <i class="fa fa-whatsapp"> &nbsp; +62 813 2820 8075</i>
                                 </a><br>
                                 <a href="https://api.whatsapp.com/send?phone= +62 812 1561 037 &text=Hai, Saya tertarik dengan layanan Anda." target="_blank">
-                                    <i class="fab fa-whatsapp"> &nbsp; +62 812 1561 037</i>
+                                    <i class="fa fa-whatsapp"> &nbsp; +62 812 1561 037</i>
                                 </a>
                             </div>
                         </div>
@@ -219,7 +444,7 @@
                     </div>
                     <div id="error">
                         <p class="contactalert">
-                            Something went wrong, try refreshing and submitting the form again.
+                            Ada yang salah, mohon lengkapi
                         </p>
                     </div>
                 </div>
