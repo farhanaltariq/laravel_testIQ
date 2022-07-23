@@ -38,9 +38,9 @@
 
 <!-- About
 		================================================== -->
-<section id="about" class="parallax section" style="background-color : #8411cd;">
+<section id="about" class="parallax section" style="background-image: url(https://img.freepik.com/free-photo/modern-office-building-low-angle-view-skyscrapers-city-singapore-modern-office-building-low-angle-view-skyscrapers-city-singapore_231208-1463.jpg?w=900&t=st=1658588393~exp=1658588993~hmac=157f45b8ec528a063f55f90607158a9851c5d2a351258ab14243b3afa71c96ec);">
     <div class="wrapsection">
-        <div class="parallax-overlay" style="background-color: #8411cd;"></div>
+        <div class="parallax-overlay" style="background-color: #8411cd; opacity:0.9;"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -123,7 +123,7 @@
 
 <!-- Service
 		================================================== -->
-<section id="service" class="parallax section">
+<section id="service" class="parallax section" style="background-image: url(https://img.freepik.com/free-photo/successful-child-with-graduation-cap-backpack-full-books_1098-3455.jpg?w=900&t=st=1658588047~exp=1658588647~hmac=13dec83d2aab78bd7d14cee2f938e1b35452456e03bd3cf0c146c9cbb05f67dd);">
     <div class="wrapsection">
         <div class="parallax-overlay" style="background-color: #C279F1;opacity:0.9;"></div>
         <div class="container">
