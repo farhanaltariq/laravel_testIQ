@@ -28,12 +28,14 @@ Route::middleware(['auth', 'active'])->group(function () {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/calendar', [App\Http\Controllers\FullCalendarController::class, 'index'])->name('calendar');
 
+    Route::get('/key-v', [App\Http\Controllers\CalculatorController::class, 'key_v'])->name('key-v');
     Route::get('/test-v', [App\Http\Controllers\CalculatorController::class, 'test_v'])->name('test-v');
     Route::post('/test-v', [App\Http\Controllers\CalculatorController::class, 'ans_v'])->name('test-v.ans');
     Route::get('/test-v/{id}', [App\Http\Controllers\CalculatorController::class, 'show_v'])->name('test-v.show');
     Route::put('/test-v/{id}', [App\Http\Controllers\CalculatorController::class, 'update_v'])->name('test-v.update');
     Route::delete('/test-v/{id}', [App\Http\Controllers\CalculatorController::class, 'destroy_v'])->name('test-v.destroy');
 
+    Route::get('/key-n1', [App\Http\Controllers\CalculatorController::class, 'key_n1'])->name('key-n1');
     Route::get('/test-n1', [App\Http\Controllers\CalculatorController::class, 'test_n1'])->name('test-n1');
     Route::get('/test-n1-create', [App\Http\Controllers\CalculatorController::class, 'create_n1'])->name('test-n1.create');
     Route::post('/test-n1-store', [App\Http\Controllers\CalculatorController::class, 'store_n1'])->name('test-n1.store');
@@ -42,6 +44,7 @@ Route::middleware(['auth', 'active'])->group(function () {
     Route::put('/test-n1/{id}', [App\Http\Controllers\CalculatorController::class, 'update_n1'])->name('test-n1.update');
     Route::delete('/test-n1/{id}', [App\Http\Controllers\CalculatorController::class, 'destroy_n1'])->name('test-n1.destroy');
     
+    Route::get('/key-n3', [App\Http\Controllers\CalculatorController::class, 'key_n3'])->name('key-n3');
     Route::get('/test-n3', [App\Http\Controllers\CalculatorController::class, 'test_n3'])->name('test-n3');
     Route::post('/test-n3', [App\Http\Controllers\CalculatorController::class, 'ans_n3'])->name('test-n3.ans');
     Route::get('/test-n3/{id}', [App\Http\Controllers\CalculatorController::class, 'show_n3'])->name('test-n3.show');

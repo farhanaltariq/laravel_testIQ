@@ -40,6 +40,14 @@ class CalculatorController extends Controller
         }
         return view('dashboard.calculator.test-v', compact('v', 'answer', 'type'));
     }
+    public function key_v(){
+        $keys = Key_V::all();
+        $answer[0] = '';
+        foreach($keys as $key){
+            $answer[] = $key->answer;
+        }
+        return view('dashboard.keys.v', compact('answer'));
+    }
 
     public function create_v(){
         return view('dashboard.calculator.test-v-create');
@@ -98,6 +106,14 @@ class CalculatorController extends Controller
         }
         return view('dashboard.calculator.test-n1', compact('n1', 'answer'));
     }
+    public function key_n1(){
+        $keys = Key_N1::all();
+        $answer[0] = '';
+        foreach($keys as $key){
+            $answer[] = $key->answer;
+        }
+        return view('dashboard.keys.n1', compact('answer'));
+    }
 
     public function create_n1(){
         return view('dashboard.calculator.test-n1-create');
@@ -153,6 +169,14 @@ class CalculatorController extends Controller
             $answer[] = $key->answer;
         }
         return view('dashboard.calculator.test-n3', compact('n3', 'answer'));
+    }
+    public function key_n3(){
+        $keys = Key_N3::all();
+        $answer[0] = '';
+        foreach($keys as $key){
+            $answer[] = $key->answer;
+        }
+        return view('dashboard.keys.n3', compact('answer'));
     }
     public function ans_n3(Request $request){
         // validate file
