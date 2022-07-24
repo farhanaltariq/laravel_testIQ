@@ -38,9 +38,9 @@
 
 <!-- About
 		================================================== -->
-<section id="about" class="parallax section" style="background-color : #8411cd;">
+<section id="about" class="parallax section" style="background-image: url(https://img.freepik.com/free-photo/modern-office-building-low-angle-view-skyscrapers-city-singapore-modern-office-building-low-angle-view-skyscrapers-city-singapore_231208-1463.jpg?w=900&t=st=1658588393~exp=1658588993~hmac=157f45b8ec528a063f55f90607158a9851c5d2a351258ab14243b3afa71c96ec);">
     <div class="wrapsection">
-        <div class="parallax-overlay" style="background-color: #8411cd;"></div>
+        <div class="parallax-overlay" style="background-color: #8411cd; opacity:0.9;"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -67,15 +67,16 @@
                         <h3>VISI</h3>
                         <div class="text-center">
                             <p>
-                                Memiliki manfaat dan kemampuan yang optimal untuk membantu dalam mengatasi berbagai persoalan pisikologi baik pada tingkat individual, institusial atau kemasyarakatan
+                                Memiliki manfaat dan kemampuan yang optimal untuk membantu dalam
+                                mengatasi berbagai persoalan psikologi baik pada tingkat individual, institusional atau kemasyarakatan
                             </p>
                         </div>
                         <br>
                         <h3>MISI</h3>
                         <div class="text-center">
                             <p>
-                                Menerapkan hasil-hasil kajian dan penelitian dalam berbagai keheidupan manusia. Sosialisasi dan pemanfaatan ilmu psikologi. Pelayanan psikologi bagi perorangan, masyarakat dan lembagai
-                                yang membutuhkan
+                                Menerapkan hasil-hasil kajian dan penelitian dalam berbagai kehidupan manusia. Sosialisasi dan pemanfaatan ilmu psikologi.
+                                Pelayanan psikologi bagi perorangan, masyarakat dan lembaga yang membutuhkan
                             </p>
                         </div>
                         <br>
@@ -83,7 +84,7 @@
                         <div class="text-left">
                             <p>
                                 1. Menyelenggarakan sosialisasi pemanfaatan psikologi dalam berbagai bidang kehidupan manusia <br>
-                                2. Menyelenggarakan pelatihan dalam meningkatan ketrampilan mengahadipi berbagai masalah psikologi bagi perorangan <br>
+                                2. Menyelenggarakan pelatihan dalam meningkatan keterampilan menghadapi berbagai masalah psikologi bagi perorangan <br>
                                 3. Menyelenggarakan layanan konsultasi psikologi bagi perorangan, masyarakat dan kelembagaan <br>
                                 4. Menyelenggarakan layanan diagnosis/asesmen/tes psikologi bagi perorangan, masyarakat dan Lembaga/sekolah <br>
                                 5. Menyelenggarakan penerbitan buku-buku psikologi <br>
@@ -93,9 +94,9 @@
                         <h3>PENGALAMAN</h3>
                         <div class="text-left">
                             <p>
-                                1.Telah memberikan pelayanan/konsultasi psikologi terhadap berbagi perusahaan, untuk seleksi dan penempatan karyawan. <br>
-                                2.Konsultasi perorangan dalam bidang pendidikan dan kesehatan mental. <br>
-                                3.Melayani berbagai konsultasi/tes psikologi terhadap sekolah-sekolah khusus. <br>
+                                1. Telah memberikan pelayanan/konsultasi psikologi terhadap berbagi perusahaan, untuk seleksi dan penempatan karyawan. <br>
+                                2. Konsultansi perorangan dalam bidang pendidikan dan kesehatan mental. <br>
+                                3. Melayani berbagai konsultasi/tes psikologi terhadap sekolah-sekolah khusus. <br>
                                 4. Melayani konsultasi psikologi/tes psikologi dalam penjurusan untuk berbagai sekolah di Jawa dan luar jawa. <br>
                             </p>
                         </div>
@@ -122,7 +123,7 @@
 
 <!-- Service
 		================================================== -->
-<section id="service" class="parallax section">
+<section id="service" class="parallax section" style="background-image: url(https://img.freepik.com/free-photo/successful-child-with-graduation-cap-backpack-full-books_1098-3455.jpg?w=900&t=st=1658588047~exp=1658588647~hmac=13dec83d2aab78bd7d14cee2f938e1b35452456e03bd3cf0c146c9cbb05f67dd);">
     <div class="wrapsection">
         <div class="parallax-overlay" style="background-color: #C279F1;opacity:0.9;"></div>
         <div class="container">
@@ -141,9 +142,56 @@
                         <h3>Program A</h3>
                         <div class="text-left">
                             <p>
-                                Diperuntukan bagi siswa SMP dan MTs kelas VII dan VIII dalam pengenalan diri terhadap kondisi psikologis terpenting yaitu inteligensi (potensial umum) atau bakat (potensial khusus) dan pola kerja siswa-siswa.
+                                Diperuntukan bagi siswa SMP dan MTs kelas VII dan VIII dalam pengenalan diri terhadap kondisi psikologis
+                                terpenting yaitu intelegensi (potensial umum) atau bakat (potensial khusus) dan pola kerja siswa-siswa.
+
                             </p>
-                            <button type="button" class="btn btn-info btn-md"><a href="#">Selengkapnya</a></button>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#programa">
+                                Selengkapnya
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="programa" data-backdrop="" data-keyboard="false" tabindex="-1" aria-labelledby="programaLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="programaLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3 class="text-center">PROGRAM A</h3>
+                                            <p>Bagi siswa SMP dan MTS (Madrasah Tsanawiyah) kelas VII yang sedang mengikuti proses pendidikan di SMP/MTS.
+                                                Diberikan tes psikologi untuk memberi gambaran secara lebih akurat tentang belajar dan prestasi di SMP/MTS.
+                                                Aspek-aspek psikologis yang diukur adalah sebagai berikut:</p>
+                                            <table>
+                                                <tr>
+                                                    <ol type="1">
+                                                        <li> <b>Inteligensi Umum</b>: kecerdasan dan kemampuan berfikir, dalam semua macam bidang kegiatan.
+                                                            Tidak terkait dengan bidang tertetu. Tingginya keceradasan seseorang,
+                                                            akan menunjukkan kemungkinan sukses dalam pendidikan di SLTA dan kelanjutan studi.</li>
+                                                        <li><b>Kemampuan Verbal</b> : kecerdasan dan kemampuan berfikir yang terikat oleh bahasa. Ini mencakup berbagai kemampuan yang didominasi oleh unsur bahasa.</li>
+                                                        <li><b>Kemampuan Non Verbal</b>: kecerdasan dan kemampuan berfikir yang tidak terikat oleh bahasa.
+                                                            Mencakup semua kemampuan yang tidak ada atau sedikit unsur bahasanya, seperti menggambar dan memahami bentuk.</li>
+                                                        <li><b>Abstract Reasoning</b> : kemampuan berfikir abstrak dan logika non verbal.</li>
+                                                        <li><b>Kemampuan Bahasa</b> : kemampuan dasar dan penguasaan atas konsep bahasa.</li>
+                                                        <li><b>Pengetahuan</b> : kemampuan dasar dalam menyerap konsep dan pengetahuan umum.</li>
+                                                        <li><b>Kecepatan Kerja</b>, tipe kerja yang menyangkut kecepatan dan kegesitan dalam mengerjakan sesuatu.</li>
+                                                        <li><b>Ketelitian Kerja</b>, tipe kerja yang menyangkut kecermatan dalam melakukan setiap pekerjaan.</li>
+
+                                                    </ol>
+                                                </tr>
+                                            </table>
+                                            <b class="text-left">Biaya program A : Rp.17.000/orang</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -152,13 +200,267 @@
                         <h3>Program B</h3>
                         <div class="text-left">
                             <p>
-                                Bagi siswa SMP dan MTs kelas IX yang akan melanjutkan ke jenjang studi berikutnya. Maka diberrikan tes psikologi untuk memprediksi kelanjutan studi dan jurusan yang mungkin sebaiknya diambil di sekolah lanjutan itu.
+                                Bagi siswa SMP dan MTs kelas IX yang akan melanjutkan ke jenjang studi berikutnya. Maka diberikan tes psikologi
+                                untuk memprediksi kelanjutan studi dan jurusan yang mungkin sebaiknya diambil di sekolah lanjutan itu.
                             </p>
-                            <button type="button" class="btn btn-info btn-md"><a href="#">Selengkapnya</a></button>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#programb">
+                                Selengkapnya
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="programb" data-backdrop="" data-keyboard="false" tabindex="-1" aria-labelledby="programbLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="programbLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3 class="text-center">PROGRAM B</h3>
+                                            <p>Bagi siswa SMP dan MTS (Madrasah Tsanawiyah) kelas IX yang akan mengikuti jurusan yang tersedia di SMA dan MA, atau ke SMK maka diberrikan tes psikologi untuk memprediksi kesuksesan studi pada jurusan yang mungkin sebaiknya diambil. Untuk kepentingan ini, maka akan diketahui aspek-aspek berikut ini:
+                                                INTELIGENSI</p>
+                                            <table>
+                                                <tr>
+                                                    <ol type="1">
+                                                        <li><b>Inteligensi Umum</b> : kecerdasan dan kemampuan berfikir, dalam semua macam bidang kegiatan.
+                                                            Tingginya keceradasan seseorang, akan menunjukkan kemungkinan sukses dalam pendidikan di SLTA dan kelanjutan studi.</li>
+                                                        <li><b>Kemampuan Verbal</b> : kecerdasan dan kemampuan berfikir yang terikat oleh bahasa. Ini mencakup berbagai kemampuan yang
+                                                            didominasi oleh unsur bahasa.</li>
+                                                        <li><b>Kemampuan Non Verbal</b>: kecerdasan dan kemampuan berfikir yang tidak terikat oleh bahasa. Mencakup semua kemampuan
+                                                            yang tidak ada atau sedikit unsur bahasanya, seperti menggambar dan memahami bentuk.</li>
+                                                        <li><b>Numerical Ability</b> : kemampuan dasar dalam operasi hitung dan tata bilangan.</li>
+                                                        <li><b>Kemampuan Bahasa</b> : kemampuan dasar dan penguasaan atas konsep bahasa.</li>
+                                                        <li><b>Pengetahuan</b> : kemampuan dasar dalam menterap konsep dan masalah sosial.</li>
+                                                        <li><b>Abstract Reasoning</b> : kemampuann berfikir abstrak dan logika bentuk.</li>
+                                                        <li><b>Mechanical Reasoning</b>: pemahaman dasar atas konsep-konsep teknik, fisika dan mekanika.</li>
+                                                        <li><b>Pandang Ruang</b>: kemampuan dalam mempersepsi ruang.dan design (rancang bangun).
+                                                            BAKAT</li>
+                                                        <li>Kemampuan potensial (bakat) mempelajari ilmu-ilmu dalam IPA atau MIA</li>
+                                                        <li>Kemampuan potensial (bakat) mempelajari ilmu-ilmu dalam IPS atau IIS</li>
+                                                        <li>Kemampuan potensial (bakat) mempelajari ilmu-ilmu Bahasa.
+                                                            POLA AKTIVITAS</li>
+                                                        <li>Kecepatan Kerja, dan Ketelitian Kerja MINAT JURUSAN</li>
+                                                        <li>IPS atau IIS, IPA atau MIA, Bahasa</li>
+                                                    </ol>
+                                                </tr>
+                                            </table>
+                                            <b class="text-left">Biaya program B : Rp.20.000/orang</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
+                        <h3>Program C</h3>
+                        <div class="text-left">
+                            <p>
+                                Bagi siswa SMA dan MA (Madrasah Aliyah) kelas X yang akan mengikuti jurusan yang tersedia di SMA dan MA, maka diberikan tes psikologi untuk memprediksi kesuksesan studi pada jurusan yang mungkin sebaiknya diambil. Untuk kepentingan ini, maka akan diketahui aspek-aspek berikut ini:
+                                INTELIGENSI
+                            </p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#programc">
+                                Selengkapnya
+                            </button>
 
+                            <!-- Modal -->
+                            <div class="modal fade" id="programc" data-backdrop="" data-keyboard="false" tabindex="-1" aria-labelledby="programcLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="programcLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3 class="text-center">PROGRAM C</h3>
+                                            <p>Bagi siswa SMA dan MA (Madrasah Aliyah) kelas X yang akan mengikuti jurusan yang tersedia di SMA dan MA, maka diberikan tes psikologi untuk memprediksi kesuksesan studi pada jurusan yang mungkin sebaiknya diambil. Untuk kepentingan ini, maka akan diketahui aspek-aspek berikut ini:
+                                                INTELIGENSI
+                                            </p>
+                                            <table>
+                                                <tr>
+                                                    <ol type="1">
+                                                        <li> <b>Inteligensi Umum</b>: kecerdasan dan kemampuan berpikir, dalam semua macam bidang kegiatan. Tingginya kecerdasan seseorang,
+                                                            akan menunjukkan kemungkinan sukses dalam pendidikan di SLTA dan kelanjutan studi.</li>
+                                                        <li><b>Kemampuan Verbal</b> : kecerdasan dan kemampuan berfikir yang terikat oleh bahasa. Ini mencakup berbagai kemampuan yang didominasi oleh unsur bahasa.</li>
+                                                        <li><b>Kemampuan Non Verbal</b>: kecerdasan dan kemampuan berfikir yang tidak terikat oleh bahasa.
+                                                            Mencakup semua kemampuan yang tidak ada atau sedikit unsur bahasanya, seperti menggambar dan memahami bentuk.</li>
+                                                        <li><b>Abstract Reasoning</b> : kemampuan berfikir abstrak dan logika non verbal.</li>
+                                                        <li><b>Kemampuan Bahasa</b> : kemampuan dasar dan penguasaan atas konsep bahasa.</li>
+                                                        <li><b>Pengetahuan</b> : kemampuan dasar dalam menyerap konsep dan pengetahuan umum.</li>
+                                                        <li><b>Kecepatan Kerja</b>, tipe kerja yang menyangkut kecepatan dan kegesitan dalam mengerjakan sesuatu.</li>
+                                                        <li><b>Ketelitian Kerja</b>, tipe kerja yang menyangkut kecermatan dalam melakukan setiap pekerjaan.</li>
+                                                    </ol>
+                                                </tr>
+                                            </table>
+                                            <b class="text-left">Biaya program C : Rp.15.000/orang</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
+                        <h3>Program D</h3>
+                        <div class="text-left">
+                            <p>
+                                Program ini diperuntukan siswa kelas XII (SMA dan MA) yang akan melanjutkan studi di perguruan tinggi dengan segala jurusan dan pekerjaan yang ada.
+                                untuk menjadi masukan bagi pemilihan jenjang dan jenis program studi yang sebaiknya diikuti oleh siswa setelah nantinya lulus dari SMA atau MA. Tes ini mengungkap:
+                            </p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#programd">
+                                Selengkapnya
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="programd" data-backdrop="" data-keyboard="false" tabindex="-1" aria-labelledby="programdLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="programdLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3 class="text-center">PROGRAM D</h3>
+                                            <p>Program ini diperuntukan siswa kelas XII (SMA dan MA) yang akan melanjutkan studi di perguruan tinggi dengan segala jurusan dan pekerjaan yang ada.
+                                                untuk menjadi masukan bagi pemilihan jenjang dan jenis program studi yang sebaiknya diikuti oleh siswa setelah nantinya lulus dari SMA atau MA. Tes ini mengungkap:</p>
+                                            <b>1. Kemampuan dan Sifat Kerja</b>
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Aspek</th>
+                                                        <th scope="col">Arti</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Inteligensi/ Kecerdasan</th>
+                                                        <td>
+                                                            Kecerdasan merupakan faktor penting kesuksesan dalam berbagai bidang, yang akan meneruskan ke
+                                                            jenjang pendidikan tinggi (Strata atau Diploma).
+                                                            Makin tinggi tingkat pendidikan atau jabatan, makin tinggi pula kecerdasan yang dibutuhkan.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Ketajaman Mental <br>
+                                                            Penguasaan Bahasa <br>
+                                                            Pengetahuan Umum <br></th>
+                                                        <td>Merupakan kelompok sosial yang mengarah pada jejang pendidikan tinggi sosial dan humaniora. <br>
+                                                            Seorang jaksa, advokat, sosiolog, sastrawan, diplomat, wartawan, <br> psikolog sebaiknya mempunyai
+                                                            dasar tiga aspek tersebut dengan baik.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Matematika Eksakta <br>
+                                                            Pandang Ruang <br>
+                                                            Teknik Mekanik <br>
+                                                        </th>
+                                                        <td colspan="2">Merupakan kelompok kemampuan eksakta yang mengarah pada jenjang pendidikan tinggi eksakta dan ilmu pengetahuan alam.
+                                                            Kelompok keahlian seperti matematika, biologi, kedokteran, farmasi, dan kesehatan, penting memiliki kemampuan ini .
+                                                            Begitu juga yang berkecimpung dalam teknik apapun, pertanian dan perkebunan serta bidang yang sejenis dengan itu.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Daya Tangkap <br>
+                                                            Tata Bilangan <br>
+                                                            Tata Hitungan <br>
+                                                            Cepat Administrasi <br>
+                                                            Ketelitian
+                                                        </th>
+                                                        <td>
+                                                            Ini merupakan kombinasi aspek kemampuan eksakta dan sosial, mengarah pada jenjang perguruan tinggi semi eksakta.
+                                                            Seorang akuntan, ahli ekonomi, ahli statistik, manajer pemasaran dan perusahaan, perbankan dan asuransi,
+                                                            sulit berhasil jika tidak memiliki dasar yang cukup dalam aspek-aspek ini. Termasuk dalam hal ini adalah geografi dan arkeologi.
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <b>2. Minat Jurusan dan Kerja </b>
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">No</th>
+                                                        <th scope="col">Ranah Minat</th>
+                                                        <th scope="col">Arti dan Contoh Pekerjaan</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>
+                                                            Outdoor
+                                                        </td>
+                                                        <td>Kegiatan dan pekerjaan di luar ruangan</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Mechanical</td>
+                                                        <td>Pekerjaan dan kegiatan yang berhubungan dengan mesin dan alat. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Computational</td>
+                                                        <td>Pekerjaan dan kegiatan yang berkaitan dengan angka dan hitungan.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>Persuasive</td>
+                                                        <td>Pekerjaan dan kegiatan dalam menjumpai dan mempengaruhi orang. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <td>Artistic</td>
+                                                        <td>Kegiatan dan pekerjaan dalam seni, musik dan keindahan. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"> 6</th>
+                                                        <td>
+                                                            Literary
+                                                        </td>
+                                                        <td>Pekerjaan dan kegiatan yang berupa membaca, menulis dan berhubungan dengan buku. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">7</th>
+                                                        <td>
+                                                            Social Service
+                                                        </td>
+                                                        <td>Kegiatan dan pekerjaan melayani dan menolong orang lain. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">8</th>
+                                                        <td>
+                                                            Medicine
+                                                        </td>
+                                                        <td>Kegiatan pekerjaan dalam bidang kesehatan dan perawatan. </td>
+                                                    </tr>
+                                                </tbody>
+
+                                            </table>
+                                            <b class="text-left">Biaya program D : Rp.20.000/orang</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -179,14 +481,14 @@
                         </p>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
+                        <div class="contact-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
                             <h3>Contact Person</h3>
                             <div class="text-left">
                                 <a href="https://api.whatsapp.com/send?phone= +62 813 2820 8075 &text=Hai, Saya tertarik dengan layanan Anda." target="_blank">
-                                    <i class="fab fa-whatsapp"> &nbsp; +62 813 2820 8075</i>
+                                    <i class="fa fa-whatsapp"> &nbsp; +62 813 2820 8075</i>
                                 </a><br>
                                 <a href="https://api.whatsapp.com/send?phone= +62 812 1561 037 &text=Hai, Saya tertarik dengan layanan Anda." target="_blank">
-                                    <i class="fab fa-whatsapp"> &nbsp; +62 812 1561 037</i>
+                                    <i class="fa fa-whatsapp"> &nbsp; +62 812 1561 037</i>
                                 </a>
                             </div>
                         </div>
@@ -219,7 +521,7 @@
                     </div>
                     <div id="error">
                         <p class="contactalert">
-                            Something went wrong, try refreshing and submitting the form again.
+                            Ada yang salah, mohon lengkapi
                         </p>
                     </div>
                 </div>
