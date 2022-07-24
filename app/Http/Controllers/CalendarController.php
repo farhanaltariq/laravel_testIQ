@@ -15,7 +15,12 @@ class CalendarController extends Controller
      */
     public function index()
     {
-        return view('dashboard.calendar.calendar');
+        $event = Event::get()->sortBy('start_date');
+        $event[0]->startDate;
+        $event[0]->startDateTime;
+        $event[0]->endDate;
+        $event[0]->endDateTime;
+        return view('dashboard.calendar.calendar', compact('event'));
     }
 
     /**
@@ -23,6 +28,9 @@ class CalendarController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function calendar(){
+        return view('dashboard.calendar.display');
+    }
     public function create()
     {
         
@@ -80,7 +88,17 @@ class CalendarController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        try{
+            $event = Event::find($id);
+            $event->name = $request->title;
+            $event->description = $request->description;
+            $event->startDateTime = Carbon::parse($request->start_date . ' ' . $request->start_date_time);
+            $event->endDateTime = Carbon::parse($request->end_date . ' ' . $request->end_date_time);
+            $event->save();
+            return redirect()->back()->with('success', 'Event has been updated successfully');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', $e->getMessage());
+        }
     }
 
     /**
@@ -91,6 +109,8 @@ class CalendarController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $event = Event::find($id);
+        $event->delete();
+        return redirect()->back()->with('success', 'Event has been deleted');
     }
 }

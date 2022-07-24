@@ -26,6 +26,7 @@ Route::get('/', function () {
 Route::middleware(['auth', 'active'])->group(function () {
     // tambahin route baru didalam sini kalo perlu login
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/gcalendar', [App\Http\Controllers\CalendarController::class, 'calendar'])->name('calendar.display');
     Route::resource('calendar', App\Http\Controllers\CalendarController::class);
 
     Route::get('/key-v', [App\Http\Controllers\CalculatorController::class, 'key_v'])->name('key-v');
