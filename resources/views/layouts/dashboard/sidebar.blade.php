@@ -91,7 +91,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('calendar') }}" >
+                <a class="nav-link" href="{{ route('calendar.index') }}" >
                     <i class="fas fa-fw fa-calendar"></i>
                     <span>Kalendar</span>
                 </a>
