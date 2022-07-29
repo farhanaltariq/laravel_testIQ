@@ -16,10 +16,12 @@ class CalendarController extends Controller
     public function index()
     {
         $event = Event::get()->sortBy('start_date');
-        $event[0]->startDate;
-        $event[0]->startDateTime;
-        $event[0]->endDate;
-        $event[0]->endDateTime;
+        if($event->count() > 0){
+            $event[0]->startDate;
+            $event[0]->startDateTime;
+            $event[0]->endDate;
+            $event[0]->endDateTime;
+        }
         return view('dashboard.calendar.calendar', compact('event'));
     }
 
