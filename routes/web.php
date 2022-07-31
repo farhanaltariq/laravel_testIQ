@@ -22,6 +22,7 @@ Route::get('/', function () {
     return view('landing-pages/index');
 });
 
+Route::post('/pesan', [App\Http\Controllers\ContactController::class, 'sendMail'])->name('pesan');
 // cuma bisa diakses kalo udah login
 Route::middleware(['auth', 'active'])->group(function () {
     // tambahin route baru didalam sini kalo perlu login
@@ -44,7 +45,7 @@ Route::middleware(['auth', 'active'])->group(function () {
     Route::get('/test-n1/{id}', [App\Http\Controllers\CalculatorController::class, 'show_n1'])->name('test-n1.show');
     Route::put('/test-n1/{id}', [App\Http\Controllers\CalculatorController::class, 'update_n1'])->name('test-n1.update');
     Route::delete('/test-n1/{id}', [App\Http\Controllers\CalculatorController::class, 'destroy_n1'])->name('test-n1.destroy');
-    
+
     Route::get('/key-n2', [App\Http\Controllers\CalculatorController::class, 'key_n2'])->name('key-n2');
     Route::get('/test-n2', [App\Http\Controllers\CalculatorController::class, 'test_n2'])->name('test-n2');
     Route::post('/test-n2', [App\Http\Controllers\CalculatorController::class, 'ans_n2'])->name('test-n2.ans');
@@ -65,6 +66,6 @@ Route::middleware(['auth', 'active'])->group(function () {
     Route::put('/users/{id}', [App\Http\Controllers\UserController::class, 'updateStatus'])->name('user.updateStatus');
 });
 
-Route::any('/{any}', function(){
+Route::any('/{any}', function () {
     return view('layouts.extras.404');
 });

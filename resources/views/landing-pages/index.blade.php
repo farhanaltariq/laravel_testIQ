@@ -82,23 +82,31 @@
                         <br>
                         <h3>KEGIATAN</h3>
                         <div class="text-left">
-                            <p>
-                                1. Menyelenggarakan sosialisasi pemanfaatan psikologi dalam berbagai bidang kehidupan manusia <br>
-                                2. Menyelenggarakan pelatihan dalam meningkatan keterampilan menghadapi berbagai masalah psikologi bagi perorangan <br>
-                                3. Menyelenggarakan layanan konsultasi psikologi bagi perorangan, masyarakat dan kelembagaan <br>
-                                4. Menyelenggarakan layanan diagnosis/asesmen/tes psikologi bagi perorangan, masyarakat dan Lembaga/sekolah <br>
-                                5. Menyelenggarakan penerbitan buku-buku psikologi <br>
-                            </p>
+                            <table>
+                                <tr>
+                                    <ol type="1">
+                                        <li>Menyelenggarakan sosialisasi pemanfaatan psikologi dalam berbagai bidang kehidupan manusia</li>
+                                        <li>Menyelenggarakan pelatihan dalam meningkatan keterampilan menghadapi berbagai masalah psikologi bagi perorangan</li>
+                                        <li>Menyelenggarakan layanan konsultasi psikologi bagi perorangan, masyarakat dan kelembagaan</li>
+                                        <li>Menyelenggarakan layanan diagnosis/asesmen/tes psikologi bagi perorangan, masyarakat dan Lembaga/sekolah</li>
+                                        <li>Menyelenggarakan penerbitan buku-buku psikologi</li>
+                                    </ol>
+                                </tr>
+                            </table>
                         </div>
                         <br>
                         <h3>PENGALAMAN</h3>
                         <div class="text-left">
-                            <p>
-                                1. Telah memberikan pelayanan/konsultasi psikologi terhadap berbagi perusahaan, untuk seleksi dan penempatan karyawan. <br>
-                                2. Konsultansi perorangan dalam bidang pendidikan dan kesehatan mental. <br>
-                                3. Melayani berbagai konsultasi/tes psikologi terhadap sekolah-sekolah khusus. <br>
-                                4. Melayani konsultasi psikologi/tes psikologi dalam penjurusan untuk berbagai sekolah di Jawa dan luar jawa. <br>
-                            </p>
+                            <table>
+                                <tr>
+                                    <ol type="1">
+                                        <li>Telah memberikan pelayanan/konsultasi psikologi terhadap berbagi perusahaan, untuk seleksi dan penempatan karyawan.</li>
+                                        <li> Konsultansi perorangan dalam bidang pendidikan dan kesehatan mental.</li>
+                                        <li>Melayani berbagai konsultasi/tes psikologi terhadap sekolah-sekolah khusus.</li>
+                                        <li>Melayani konsultasi psikologi/tes psikologi dalam penjurusan untuk berbagai sekolah di Jawa dan luar jawa.</li>
+                                    </ol>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -154,7 +162,7 @@
                             <!-- Modal -->
                             <div class="modal fade" id="programa" data-backdrop="" data-keyboard="false" tabindex="-1" aria-labelledby="programaLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
+                                    <div class="modal-content" style="z-index: 5;">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="programaLabel">Modal title</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -211,7 +219,7 @@
                             <!-- Modal -->
                             <div class="modal fade" id="programb" data-backdrop="" data-keyboard="false" tabindex="-1" aria-labelledby="programbLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
+                                    <div class="modal-content" style="z-index: 5;">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="programbLabel">Modal title</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -274,7 +282,7 @@
                             <!-- Modal -->
                             <div class="modal fade" id="programc" data-backdrop="" data-keyboard="false" tabindex="-1" aria-labelledby="programcLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
+                                    <div class="modal-content" style="z-index: 5;">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="programcLabel">Modal title</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -327,9 +335,9 @@
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="programd" data-backdrop="" data-keyboard="false" tabindex="-1" aria-labelledby="programdLabel" aria-hidden="true">
+                            <div class="modal fade" id="programd" data-backdrop="" data-keyboard="false" tabindex="1" aria-labelledby="programdLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
+                                    <div class="modal-content" style="z-index: 5;">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="programdLabel">Modal title</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -485,10 +493,16 @@
                             <h3>Contact Person</h3>
                             <div class="text-left">
                                 <a href="https://api.whatsapp.com/send?phone= +62 813 2820 8075 &text=Hai, Saya tertarik dengan layanan Anda." target="_blank">
-                                    <i class="fa fa-whatsapp"> &nbsp; +62 813 2820 8075</i>
+                                    <i class="fa fa-whatsapp" style="color:black"> &nbsp; +62 813 2820 8075</i>
                                 </a><br>
                                 <a href="https://api.whatsapp.com/send?phone= +62 812 1561 037 &text=Hai, Saya tertarik dengan layanan Anda." target="_blank">
-                                    <i class="fa fa-whatsapp"> &nbsp; +62 812 1561 037</i>
+                                    <i class="fa fa-whatsapp" style="color:black"> &nbsp; +62 812 1561 037</i>
+                                </a>
+                                <br>
+                                <i class="fa fa-fax"> &nbsp; (0274) 377508</i>
+                                <br>
+                                <a href="mailto:fachry.hanif27@gmail.com">
+                                    <i class="fa fa-mail-bulk">Facahry.hamif27@gmail.com</i>
                                 </a>
                             </div>
                         </div>
@@ -496,33 +510,19 @@
                     <div class="col-md-8 col-sm-6">
                         <div class="contact-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
                             <h3>Kirim Pertanyaan Langsung</h3>
-                            <form id="contact" name="contact" method="post" class="text-left">
-                                <fieldset>
-                                    <div class="wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:15px;">
-                                        <label for="email">Email<span class="required">*</span></label>
-                                        <input name="email" id="email" required></input>
-                                    </div>
-
-                                    <div class="wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="1.5" style="margin-top:15px;">
-                                        <label for="message">Pesan<span class="required">*</span></label>
-                                        <textarea name="message" id="message" required class="border-1px"></textarea>
-                                    </div>
-                                    <div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
-                                        <input class="btn-info" id="submit" type="submit" name="submit" value="Kirim" />
-                                    </div>
-                                </fieldset>
+                            <form action="{{route('pesan')}}" method="POST" class="text-left">
+                                @csrf
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" name="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pesan">Pesan</label>
+                                    <textarea class="form-control" name="pesan" rows="3"></textarea>
+                                </div>
+                                <button type="submit" name="submit" class="btn btn-primary">Kirim</button>
                             </form>
                         </div>
-                    </div>
-                    <div id="success">
-                        <p class="contactalert">
-                            Pesan Anda Berhasil Di Kirim
-                        </p>
-                    </div>
-                    <div id="error">
-                        <p class="contactalert">
-                            Ada yang salah, mohon lengkapi
-                        </p>
                     </div>
                 </div>
             </div>
