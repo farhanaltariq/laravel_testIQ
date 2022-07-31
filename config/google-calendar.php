@@ -13,7 +13,7 @@ return [
             /*
              * Path to the json file containing the credentials.
              */
-            'credentials_json' => '../service-account-credentials.json',
+            'credentials_json' => '../google-credentials.json',
         ],
 
         /*
