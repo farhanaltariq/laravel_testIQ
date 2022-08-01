@@ -501,8 +501,8 @@
                                 <br>
                                 <i class="fa fa-fax"> &nbsp; (0274) 377508</i>
                                 <br>
-                                <a href="mailto:fachry.hanif27@gmail.com">
-                                    <i class="fa fa-mail-bulk">Facahry.hamif27@gmail.com</i>
+                                <a href="mailto:binapsikologiid@gmail.com">
+                                    <i class="fa fa-envelope" aria-hidden="true" style="color:black;"> &nbsp; binapsikologiid@gmail.com</i>
                                 </a>
                             </div>
                         </div>

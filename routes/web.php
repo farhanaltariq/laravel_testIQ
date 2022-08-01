@@ -30,6 +30,8 @@ Route::middleware(['auth', 'active'])->group(function () {
     Route::get('/gcalendar', [App\Http\Controllers\CalendarController::class, 'calendar'])->name('calendar.display');
     Route::resource('calendar', App\Http\Controllers\CalendarController::class);
 
+    Route::get('/feedback', [App\Http\Controllers\FeedController::class, 'feedback'])->name('feedback');
+
     Route::get('/key-v', [App\Http\Controllers\CalculatorController::class, 'key_v'])->name('key-v');
     Route::get('/test-v', [App\Http\Controllers\CalculatorController::class, 'test_v'])->name('test-v');
     Route::post('/test-v', [App\Http\Controllers\CalculatorController::class, 'ans_v'])->name('test-v.ans');

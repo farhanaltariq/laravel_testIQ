@@ -98,7 +98,7 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('calendar.index') }}">
+        <a class="nav-link" href="{{ route('feedback') }}">
             <i class="fa fa-comment"></i>
             <span>Feedback</span>
         </a>
