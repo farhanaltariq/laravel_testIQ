@@ -75,11 +75,6 @@
         <!-- Credits 
 	=============================================== -->
         <section id="credits" class="text-center">
-            <span class="social wow zoomIn">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-google"></i></a>
-            </span><br />
             Copyright &copy;<a href="#">2022 Bina Psikologi Indonesia</a>
         </section>
         <!-- Bootstrap core JavaScript
