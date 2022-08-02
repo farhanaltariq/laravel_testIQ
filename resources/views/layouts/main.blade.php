@@ -77,6 +77,7 @@
         <section id="credits" class="text-center">
             Copyright &copy;<a href="#">2022 Bina Psikologi Indonesia</a>
         </section>
+
         <!-- Bootstrap core JavaScript
 		================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
@@ -88,6 +89,8 @@
         <script src="{{ asset('webSPP') }}/assets/js/jquery.magnific-popup.min.js"></script>
         <script src="{{ asset('webSPP') }}/assets/js/validate.js"></script>
         <script src="{{ asset('webSPP') }}/assets/js/common.js"></script>
+        @include('sweetalert::alert')
+
     </body>
 
 </html>

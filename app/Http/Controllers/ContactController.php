@@ -11,9 +11,9 @@ class ContactController extends Controller
     {
         try {
             Contact::create($request->all());
-            return redirect()->back()->with('success', 'OK');
+            return back()->with('toast_success', 'Pesan Berhasil di Kirim');
         } catch (\Exception $e) {
-            return redirect()->back()->with('error', '!OK');
+            return back()->with('toast_error', 'Pesan Gagal di Kirim');
         }
     }
 }
