@@ -22,9 +22,10 @@ class VImport implements ToModel, WithStartRow
     public function model(array $row)
     {
         return new V([
+            // dd(gettype($row[3])),
             'created_at' => Date::excelToDateTimeObject($row[0])->format('Y-m-d h:i:s'),
             'nama' => $row[2],
-            'tgl_lahir' => gettype($row[3]) == 'double' ? Date::excelToDateTimeObject($row[3])->format('m/d/Y') : $row[3],
+            'tgl_lahir' => gettype($row[3]) == 'double' || gettype($row[3]) == 'integer' ? Date::excelToDateTimeObject($row[3])->format('m/d/Y') : $row[3],
             'ruang_kelas' => $row[4],
             'pil_jurusan' => $row[5],
             'ans1' => $row[6],

@@ -24,7 +24,7 @@ class N2Import implements ToModel, withStartRow
         return new N2([
             'created_at' => gettype($row[0]) == 'double' ? Date::excelToDateTimeObject($row[0])->format('Y-m-d h:i:s') : $row[0],
             'nama' => $row[2],
-            'tgl_lahir' => gettype($row[3]) == 'double' ? Date::excelToDateTimeObject($row[3])->format('m/d/Y') : $row[3],
+            'tgl_lahir' => gettype($row[3]) == 'double' || gettype($row[3]) == 'integer' ? Date::excelToDateTimeObject($row[3])->format('m/d/Y') : $row[3],
             'ruang_kelas' => $row[4],
             'pil_jurusan' => $row[5],
             'ans1' => $row[6],
